@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
+import Home from '@/pages/home'
 
 export default class RouterMap extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class RouterMap extends Component {
     <div>
       <Router>
         <Switch>
-          {/*<Route exact path="/" component={App}/>*/}
+          <Route exact path="/" component={Home}/>
         </Switch>
       </Router>
     </div>
