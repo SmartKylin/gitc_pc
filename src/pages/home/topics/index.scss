@@ -1,4 +1,8 @@
 .conference--topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .topic--title {
     background: url(../../../images/topic-title.png) no-repeat center;
     width: 226px;
@@ -8,6 +12,23 @@
     line-height: 80px;
     margin-bottom: 94px;
   }
+  .topic--body {
+    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-
+    .topic--row {
+      display: flex;
+      width: 1180px;
+      flex-direction: row;
+      margin-bottom: 70px;
+      .topic--item {
+        margin-right: 30px;
+      }
+      .topic--item:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
