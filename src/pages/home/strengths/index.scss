@@ -1,0 +1,52 @@
+
+.conference--strengths {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+
+  .strengths--title {
+    background: url(../../../images/strengths-title.png) no-repeat center;
+    width: 226px;
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 94px;
+  }
+
+  .strengths--body {
+    width: 1146px;
+  }
+
+  .body--row {
+    display: flex;
+    //justify-content: space-between;
+    margin-bottom: 62px;
+  }
+
+  .strength--item {
+    width: 267px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item--img {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    border: 3px solid #959595;
+    background: url(../../../images/cup.svg) no-repeat center;
+    background-size: 60%;
+  }
+  .item--img--wrap {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid #8b8c8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
