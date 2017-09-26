@@ -8,6 +8,8 @@ export default class extends Component {
       <div className='conference--topic'>
         <div className='topic--title'>大会专题</div>
         <TopicItem/>
+        <TopicItem iconClass={'icon-zhuhuichang'}/>
+        
       </div>
     )
   }

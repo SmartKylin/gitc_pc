@@ -1,7 +1,41 @@
+@import "../../../../style/common";
+
 .topic--item {
   width: 370px;
   height: 255px;
   border-radius: 8px;
   position: relative;
   background: #172742;
+  &.active {
+    background: #2b67ff;
+  }
+
+  &.active {
+    .topic--icon {
+      background: #2b67ff;
+    }
+  }
+  /*.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }*/
+
+  .topic--icon {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    border: 3px solid #0d1427;
+    margin-left: -40px;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #405b89;
+
+  }
 }
