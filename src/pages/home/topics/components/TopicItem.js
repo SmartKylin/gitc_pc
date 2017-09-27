@@ -1,11 +1,9 @@
 import React, {Component} from 'react'
 import './index.scss'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default class extends Component {
-  constructor (props) {
-    super(props)
-  }
+
   componentDidMount () {
     this.item.onmouseenter = () => {
       this.item.classList.add('active')
