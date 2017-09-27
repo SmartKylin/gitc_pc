@@ -19,7 +19,7 @@ export default class Nav extends React.Component{
                     <div><Link to={'/'}><p>加入我们</p></Link></div>
                 </div>
                 <div className="NavButton">
-                    <div className="NavBtn">立即购买</div>
+                    <div className="NavBtn"><a href="https://www.bagevent.com/event/768490">立即购买</a></div>
                     <div className="NavBtn">我的门票</div>
                 </div>
             </div>
