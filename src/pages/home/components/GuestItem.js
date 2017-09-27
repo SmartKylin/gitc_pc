@@ -25,8 +25,8 @@ export default class extends Component {
   render () {
     return (
      <div className={'guest--item'}>
-       <div className={'guest--avatar--area'} ref={body => this.body = body}>
-         <img src={this.props.avatarUrl || defaultAvatar} className={'guest--avatar'}/>
+       <div className={'guest--avatar--area'} >
+         <img src={this.props.avatarUrl || defaultAvatar} className={'guest--avatar'} ref={body => this.body = body}/>
          <div className="guest--detail--box"
               style={{visibility: this.state.guestBoxVisible ? 'visible' : 'hidden'}}
               onMouseLeave={() => this.setState({ guestBoxVisible: false})}>
@@ -65,7 +65,7 @@ export default class extends Component {
          </div>
        </div>
        <div style={{marginBottom: '10px', fontSize: '16px'}}>月光疾风</div>
-       <div style={{fontSize: '12px'}}>BBT 研发总监</div>
+       <div>BBT 研发总监</div>
      </div>
     )
   }
