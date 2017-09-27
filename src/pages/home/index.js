@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Strengths from './strengths'
 import Topics from './topics'
+import Agenda from './agenda'
 
 export default class Home extends Component {
   render() {
@@ -9,6 +10,7 @@ export default class Home extends Component {
         Home
         <Strengths/>
         <Topics/>
+        <Agenda/>
       </div>
     )
   }

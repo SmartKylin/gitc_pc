@@ -26,3 +26,8 @@ export const post = (url, obj) => fetch(url, {
   credentials: 'include',
   body: formatUrlencoded(obj)
 });
+
+export default {
+  get,
+  post
+}
