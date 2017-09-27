@@ -19,7 +19,7 @@ export default class extends Component {
     return (
     <div className='topic--item' ref={item => this.item = item}>
       <div className='topic--icon'>
-        <i className={'iconfont ' + this.props.iconClass} style={{fontSize: '40px'}}></i>
+        <i className={'iconfont ' + this.props.iconClass} style={{fontSize: '40px'}}/>
       </div>
       <div className='topic--item--title'>{this.props.title}</div>
       <div className='topic--item--content'>{this.props.content}</div>

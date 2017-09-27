@@ -1,0 +1,38 @@
+.speech--guest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  .speech--title {
+    background: url(../../../images/topic-title.png) no-repeat center;
+    width: 226px;
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+  .speech--body,
+  .speech--more{
+    width: 1148px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn--more {
+    width: 140px;
+    height: 37px;
+    border: 1px solid #2b67ff;
+    border-radius: 19.5px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    > span {
+      margin-right: 7px;
+    }
+
+  }
+}
