@@ -9,9 +9,7 @@ import Footer from './footer'
 export default class Home extends Component {
   render() {
     return (
-      
-      
-      <div>
+      <div style={{color: '#fff'}}>
         <Strengths/>
         <Topics/>
         <Agenda/>
