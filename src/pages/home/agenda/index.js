@@ -55,11 +55,14 @@ export default class extends Component {
       await this.setState({
         topicIndex: length - 2
       })
+      $('.banner--body')
+      .css({
+        left: -((this.state.topicIndex) * 403) + 'px'
+      })
     }
+    
     $('.banner--body')
-    .css({
-      left: -((this.state.topicIndex) * 403) + 'px'
-    })
+    .stop()
     .animate({
       left: -((this.state.topicIndex - 1) * 403) + 'px'
     })
@@ -75,11 +78,13 @@ export default class extends Component {
       await this.setState({
         topicIndex: 1
       })
+      $('.banner--body')
+      .css({
+        left: -((this.state.topicIndex - 2) * 403) + 'px'
+      })
     }
     $('.banner--body')
-    .css({
-      left: -((this.state.topicIndex - 2) * 403) + 'px'
-    })
+    .stop()
     .animate({
       left: -((this.state.topicIndex - 1) * 403) + 'px'
     })
@@ -125,7 +130,17 @@ export default class extends Component {
               }
             </ul>
           </div>
-          <div className='focus'></div>
+          <ul className='focus--list'>
+            {
+              this.state.topicGroup[this.state.whichDay].map((item, index) => (
+                (index > 0 && index < (this.state.topicGroup[this.state.whichDay].length - 1)) ?
+                  <div key={index}
+                       className={'topic--box ' + (this.state.topicIndex === index ? 'active' : '')}
+                       onClick={() => this.changeFocus(index)}>{item}</div> : null
+                )
+              )
+            }
+          </ul>
           <div className="arrow arrow--left" onClick={this.next}>&lt;</div>
           <div className='arrow arrow--right' onClick={this.last}>&gt;</div>
         </div>
