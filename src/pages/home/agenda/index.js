@@ -134,15 +134,15 @@ export default class extends Component {
             {
               this.state.topicGroup[this.state.whichDay].map((item, index) => (
                 (index > 0 && index < (this.state.topicGroup[this.state.whichDay].length - 1)) ?
-                  <div key={index}
+                  <li key={index}
                        className={'topic--box ' + (this.state.topicIndex === index ? 'active' : '')}
-                       onClick={() => this.changeFocus(index)}>{item}</div> : null
+                       onClick={() => this.changeFocus(index)}/> : null
                 )
               )
             }
           </ul>
-          <div className="arrow arrow--left" onClick={this.next}>&lt;</div>
-          <div className='arrow arrow--right' onClick={this.last}>&gt;</div>
+          <div className="arrow arrow--left" onClick={this.next}><i className='iconfont icon-arow_up'/></div>
+          <div className='arrow arrow--right' onClick={this.last}><i className='iconfont icon-arow_up'/></div>
         </div>
       </div>
     )

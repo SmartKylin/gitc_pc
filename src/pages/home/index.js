@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Strengths from './strengths'
 import Topics from './topics'
 import Agenda from './agenda'
+import SpeechGuest from './speech-guest'
 
 export default class Home extends Component {
   render() {
@@ -11,6 +12,8 @@ export default class Home extends Component {
         <Strengths/>
         <Topics/>
         <Agenda/>
+        
+        <SpeechGuest/>
       </div>
     )
   }
