@@ -11,7 +11,7 @@ export default class Home extends Component {
     return (
       
       
-      <div>
+      <div style={{color: '#fff'}}>
         <Strengths/>
         <Topics/>
         <Agenda/>
