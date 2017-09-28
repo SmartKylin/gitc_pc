@@ -5,6 +5,7 @@ import {
   getDate1,
   getDate2
 } from "../../../services/home";
+import BannerItem from './component/bannerItem'
 
 const dateAry = ['11月23日', '11月24日']
 
@@ -147,7 +148,9 @@ export default class extends Component {
             this.state.topicGroup[this.state.whichDay].map((item, index) => (
               (index > 0 && index < (this.state.topicGroup[this.state.whichDay].length - 1)) ? <div key={index}
                    className={'topic--box ' + (this.state.topicIndex === index ? 'active' : '')}
-                   onClick={() => this.changeFocus(index)}>{item.name}</div> : null
+                   onClick={() => this.changeFocus(index)}>
+                    {item.name}
+                   </div> : null
             ))
           }
         </div>
@@ -162,7 +165,9 @@ export default class extends Component {
                 this.state.bannerAry.map((item, index) => (
                 <li key={index}
                     className={'banner--item ' + (this.state.topicIndex === index ? 'active' : '')}
-                    >{item.name}</li>
+                    >
+                  <BannerItem data={item}/>
+                  </li>
                 ))
               }
             </ul>
@@ -172,8 +177,10 @@ export default class extends Component {
               this.state.topicGroup[this.state.whichDay].map((item, index) => (
                 (index > 0 && index < (this.state.topicGroup[this.state.whichDay].length - 1)) ?
                   <li key={index}
-                       className={'topic--box ' + (this.state.topicIndex === index ? 'active' : '')}
-                       onClick={() => this.changeFocus(index)}/> : null
+                      className={'topic--box ' + (this.state.topicIndex === index ? 'active' : '')}
+                      onClick={() => this.changeFocus(index)}
+                      style={{position: 'relative'}}
+                  /> : null
                 )
               )
             }
