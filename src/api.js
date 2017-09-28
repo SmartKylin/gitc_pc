@@ -15,6 +15,11 @@ export default (config => {
   // 发送验证码
   'sendCode': '/api/gitc/code/',
 
+    //议题提交
+   'issue':'/api/gitc/meetissue/',
+
+  
+
   //大会新闻列表
   'getListNews':'/api/gitc/article-',
   //  大会新闻详情页
@@ -28,12 +33,11 @@ export default (config => {
   // http://120.92.10.182:8000/api/gitc/person-4/all/list.json?token=1afb756d16740266efde290917ca1a8e
   'pagepople':'/api/gitc/',
 
+
    
    'pople':'/api/gitc/person-',
 // 接口地址：http://120.92.10.182:8000/api/gitc/person-{library_id}/list.json
 
-  //议题提交
-   'issue':'/api/gitc/meetissue/',
   // 获取门票列表
   'getTicketList': '/api/gitc/tricket/list/',
   // 获取门票详情

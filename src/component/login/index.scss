@@ -1,6 +1,6 @@
 .login-box{
-  width: 368px;
-  height:284px;
+  width: 486px;
+  height:348px;
   background: #fff;
   position: fixed;
   left: 50%;
@@ -8,9 +8,10 @@
   border-radius: 8px;
   margin:-175px 0 0 -242px;
   padding: 66px 58px 0 58px;
+  z-index: 99999999999999 !important;
   .phone-box{
     width: 100%;
-    height: 28px;
+    height: 29px;
     line-height: 28px;
     font-size: 18px;
     background: #fff;
@@ -27,7 +28,7 @@
   }
   .code-box{
     width: 100%;
-    height: 28px;
+    height: 29px;
     line-height: 28px;
     font-size: 18px;
     background: #fff;
@@ -58,10 +59,11 @@
   }
 }
 .login-pop{
-  position: fixed;
+  position: absolute;
   top:0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 999999999999;
   background-color:rgba(0,0,0,0.8)
 }

@@ -1,11 +1,9 @@
 import React, {Component} from 'react'
 import './index.scss'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default class extends Component {
-  constructor (props) {
-    super(props)
-  }
+
   componentDidMount () {
     this.item.onmouseenter = () => {
       this.item.classList.add('active')
@@ -21,7 +19,7 @@ export default class extends Component {
     return (
     <div className='topic--item' ref={item => this.item = item}>
       <div className='topic--icon'>
-        <i className={'iconfont ' + this.props.iconClass} style={{fontSize: '40px'}}></i>
+        <i className={'iconfont ' + this.props.iconClass} style={{fontSize: '40px'}}/>
       </div>
       <div className='topic--item--title'>{this.props.title}</div>
       <div className='topic--item--content'>{this.props.content}</div>

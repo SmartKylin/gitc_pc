@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TicketItem from './ticketItem/index'
 import './ticket.scss'
-import Login from '../../component/login/index.js'
 import { getTicketList } from '../../services/ticket.js'
 export default class Ticket extends Component {
   constructor() {
@@ -59,12 +58,11 @@ export default class Ticket extends Component {
     return (
       <div className="ticket-box-felx">
         <div className="conference--strengths">
-          <div className="strengths--title">我的门票</div>
+          <div className="strengths--title strengths-color">我的门票</div>
         </div>
         {this.state.ticketLists.data.map((data, index) => (
           <TicketItem data={data} key={index} />
         ))}
-        <Login/>
       </div>
     )
   }

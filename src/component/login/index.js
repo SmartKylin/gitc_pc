@@ -22,24 +22,22 @@ export default class Login extends Component {
 }
   render() {
     return (
-      <div></div>
-      // <div className="login-pop">
-      //   <div className="login-box">
-      //     <p>手机</p>
-      //     <div className="phone-box">
-      //       <input type="text" />
-      //     </div>
-      //     <div>
-      //       <p>验证码</p>
-      //       <div className="code-box">
-      //         <input type="text" />
-      //         <div className="add-code pa" onClick={this.checkMobile.bind(this)}>获取验证码</div>
-      //       </div>
-      //       <div className="login-btn">登陆</div>
-      //     </div>
-      //   </div>
-        
-      // </div>
+      <div className="login-pop">
+        <div className="login-box">
+          <p>手机</p>
+          <div className="phone-box">
+            <input type="text" />
+          </div>
+          <div >
+            <p>验证码</p>
+            <div className="code-box">
+              <input type="text" />
+              <div className="add-code pa" onClick={this.checkMobile.bind(this)}>获取验证码</div>
+            </div>
+            <div className="login-btn">登陆</div>
+          </div>
+        </div>
+      </div>
 
 
     )
