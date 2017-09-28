@@ -1,9 +1,35 @@
 import React from 'react';
 import "./index.scss"
 import logo from "../../images/logo/logo.png"
-import {Link} from 'react-router-dom'
+ import {Link} from 'react-router-dom'
 export default class Nav extends React.Component{
+    constructor(props){
+        super(props)
+        this.state={
+             btnshow:false
+        }
+    }
 
+    componentDidMount(){
+       
+    }
+
+    handeClick(){
+        let phone=localStorage.getItem('phone');
+        let cb = () => {
+            this.props.history.push('/ticket')
+        }
+        if(phone){
+            this.props.history.push('/ticket')
+           
+        }else{
+            this.props.setLoginCb(cb)
+            this.props.onClick()
+            this.setState({
+                btnshow:!this.props.btnshow
+            })
+        }
+    }
     render(){
         return(
             <div className="NavBox">
@@ -20,7 +46,7 @@ export default class Nav extends React.Component{
                 </div>
                 <div className="NavButton">
                     <div className="NavBtn"><a href="https://www.bagevent.com/event/768490">立即购买</a></div>
-                    <div className="NavBtn"><Link to={'/ticket'}>我的门票</Link></div>
+                    <div className="NavBtn" onClick={this.handeClick.bind(this)}>我的门票</div>
                 </div>
             </div>
         )
