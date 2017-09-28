@@ -8,14 +8,7 @@ const formItemLayout = {
     labelCol: { span: 7},
     wrapperCol: { span: 12 },
 };
-
-
-function onChange(checkedValues) {
-    console.log('checked = ', checkedValues);
-}
-
 class NormalLoginForm extends Component {
-
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -31,13 +24,11 @@ class NormalLoginForm extends Component {
                         posting: false
                     })
                 })
-                console.log('Received values of form: ', values);
             }
         });
     }
 
     normFile = (e) => {
-        console.log('Upload event:', e);
         if (Array.isArray(e)) {
             return e;
         }
@@ -52,10 +43,6 @@ class NormalLoginForm extends Component {
                     <div className="issueBoxTitle">
                         <div className="issueTitle">
                             议题提交
-                            <div className="one"></div>
-                            <div className="two"></div>
-                            <div className="three"></div>
-                            <div className="four"></div>
                         </div>
                     </div>
                     <div className="issueForm">
@@ -182,7 +169,7 @@ class NormalLoginForm extends Component {
                                 {getFieldDecorator('interest', {
                                     rules: [{ required: true, message: '选择1-2个!' }],
                                 })(
-                                    <Checkbox.Group onChange={onChange}>
+                                    <Checkbox.Group>
                                         <Row>
                                             <Col span={8}><Checkbox value="主会场">主会场</Checkbox></Col>
                                             <Col span={8}><Checkbox value="运维专场">运维专场</Checkbox></Col>
