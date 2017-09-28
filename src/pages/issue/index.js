@@ -3,12 +3,18 @@ import 'antd/dist/antd.css';
 import {issue} from "../../services/issue";
 import { message,Form, Icon, Input, Button, Checkbox ,Upload,Rate,Row,Col} from 'antd';
 import "./index.scss"
+
+
 const FormItem = Form.Item;
 const formItemLayout = {
     labelCol: { span: 7},
     wrapperCol: { span: 12 },
 };
 class NormalLoginForm extends Component {
+
+    componentWillMount() {
+
+    }
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -50,6 +56,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="姓名"
+                                colon={false}
                             >
                                 {getFieldDecorator('name', {
                                     rules: [{ required: true, message: '请输入姓名!' }],
@@ -60,6 +67,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="公司"
+                                colon={false}
                             >
                                 {getFieldDecorator('company', {
                                     rules: [{ required: true, message: '请输入公司!' }],
@@ -71,6 +79,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="职位"
+                                colon={false}
                             >
                                 {getFieldDecorator('position', {
                                     rules: [{ required: true, message: '请输入职位!' }],
@@ -83,6 +92,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="手机"
+                                colon={false}
                             >
                                 {getFieldDecorator('phone', {
                                     rules: [
@@ -96,6 +106,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="邮箱"
+                                colon={false}
                                 hasFeedback
                             >
                                 {getFieldDecorator('email', {
@@ -113,17 +124,19 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="详细地址"
+                                colon={false}
                             >
                                 {getFieldDecorator('addr', {
                                     rules: [{ required: true, message: '地址不能为空!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="用于证件快递，请填写方便收件的地址" />
+                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       用于证件快递，请填写方便收件的地址" />
                                 )}
                             </FormItem>
 
                             <FormItem
                                 {...formItemLayout}
                                 label="个人照片"
+                                colon={false}
                                 extra="高清个人半照，不戴墨镜,帽子，职业照最佳"
                             >
                                 {getFieldDecorator('photo', {
@@ -141,11 +154,12 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="个人简介"
+                                colon={false}
                             >
                                 {getFieldDecorator('summary', {
                                     rules: [{ required: true, message: '请输入个人简介!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="200字左右即可" />
+                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       200字左右即可" />
                                 )}
                             </FormItem>
 
@@ -155,16 +169,18 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="演讲经验"
+                                colon={false}
                             >
                                 {getFieldDecorator('speech_experience', {
 
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="您之前在行业会议、论坛、技术交流中的演讲、主持或荣誉简介" />
+                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       您之前在行业会议、论坛、技术交流中的演讲、主持或荣誉简介" />
                                 )}
                             </FormItem>
                             <FormItem
                                 {...formItemLayout}
                                 label="感兴趣的专场"
+                                colon={false}
                             >
                                 {getFieldDecorator('interest', {
                                     rules: [{ required: true, message: '选择1-2个!' }],
@@ -192,28 +208,31 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="演讲主题"
+                                colon={false}
                             >
                                 {getFieldDecorator('theme', {
                                     rules: [{ required: true, message: '请输入演讲主题!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="请确保该主题未在其他公开场合分享过" />
+                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       请确保该主题未在其他公开场合分享过" />
                                 )}
                             </FormItem>
 
                             <FormItem
                                 {...formItemLayout}
                                 label="内容简介"
+                                colon={false}
                             >
                                 {getFieldDecorator('content', {
                                     rules: [{ required: true, message: '请输入内容简介!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="用于演讲内容审核，200字左右即可" />
+                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       用于演讲内容审核，200字左右即可" />
                                 )}
                             </FormItem>
 
                             <FormItem
                                 {...formItemLayout}
                                 label="主题创新"
+                                colon={false}
                             >
                                 {getFieldDecorator('innovate', {
                                     rules: [{ required: true, message: '主题创新不能为空!' }],
@@ -224,6 +243,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="话题热度"
+                                colon={false}
                             >
                                 {getFieldDecorator('hot_topic', {
                                     rules: [{ required: true, message: '话题热度不能为空!' }],
@@ -234,6 +254,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="实战经验"
+                                colon={false}
                             >
                                 {getFieldDecorator('experience', {
                                     rules: [{ required: true, message: '实战经验不能为空!' }],
@@ -244,6 +265,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="通用性"
+                                colon={false}
                             >
                                 {getFieldDecorator('generality', {
                                     rules: [{ required: true, message: '通用性不能为空!' }],
@@ -255,6 +277,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="推荐人"
+                                colon={false}
                             >
                                 {getFieldDecorator('referee')(
                                     <Input  />
@@ -263,6 +286,7 @@ class NormalLoginForm extends Component {
                             <FormItem
                                 {...formItemLayout}
                                 label="意见建议"
+                                colon={false}
                             >
                                 {getFieldDecorator('suggest', {
                                 })(

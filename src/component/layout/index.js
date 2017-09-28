@@ -9,7 +9,7 @@ export default class Layout extends React.Component{
         return(
             <div className="layoutBox">
                  <Nav/>
-                   <Login/>
+                   {/*<Login/>*/}
                  <div className="layoutUpper">
                      <SwiperMy/>
                  </div>
