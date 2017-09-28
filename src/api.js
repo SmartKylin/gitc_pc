@@ -19,15 +19,10 @@ export default (config => {
   // 发送验证码
   'sendCode': '/api/gitc/code/',
   
-  //大会新闻列表
-  'getListNews':'/api/gitc/article-',
-  //  大会新闻详情页
-  'getDetalisNews':'/api/gitc/article',
   'popleList':'/api/gitc/person-',
   // 注册或者登陆
   'user': '/api/gitc/user/',
-  // 赞助
-  'sponsor': '/api/gitc/sponsor/',
+  
   // 调取某页全部人员
   // http://120.92.10.182:8000/api/gitc/person-4/all/list.json?token=1afb756d16740266efde290917ca1a8e
   'pagepople':'/api/gitc/',
@@ -44,11 +39,7 @@ export default (config => {
   'getDocumentList': '/api/gitc/file/',
   // 获取个人收藏嘉宾列表
   'getGuestList': '/api/gitc/collect/',
-  // 收藏文档
-  'collectDocument': '/api/gitc/file/add/',
-  // 收藏嘉宾
-  'collectGuest': '/api/gitc/collect/add/'
-
+  
 })
 
 // 人员列表

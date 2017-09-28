@@ -17,6 +17,7 @@ export default class extends Component {
       bannerAry: ['企业专场', '主会场', '运维专场', '大数据专场', '基础架构专场', '前端技术专场', '移动互联网专场', 'IOT峰会', '技术管理&产品', '领袖峰会', '企业专场', '主会场'],
     }
   }
+  
   // 改变日期
   switchDay = async (index) => {
     await this.setState({
@@ -26,6 +27,7 @@ export default class extends Component {
       bannerAry: this.state.topicGroup[this.state.whichDay]
     })
   }
+  
   // 改变焦点
   changeFocus = async (index) => {
     console.log(index);
@@ -35,22 +37,15 @@ export default class extends Component {
     $('.banner--body').css({
       left: -((this.state.topicIndex-1) * 403) + 'px'
     })
-    /*if (index === 0) {
-      let bannerAry = this.state.bannerAry
-      let last = bannerAry.pop()
-      bannerAry.unshift(last)
-      this.setState({
-        bannerAry
-      })
-      console.log(bannerAry);
-    }*/
   }
+  
   // 切换下一个会场
   next = async () => {
     let length = this.state.bannerAry.length
     await this.setState({
       topicIndex: this.state.topicIndex-1
     })
+    
     if (this.state.topicIndex === 0) {
       await this.setState({
         topicIndex: length - 2
@@ -89,13 +84,17 @@ export default class extends Component {
       left: -((this.state.topicIndex - 1) * 403) + 'px'
     })
   }
+  
   componentDidMount () {
   
   }
+  
   render () {
     return (
       <div className={'conference--agenda'}>
         <div className={'agenda--title'}>大会议程</div>
+        
+        {/*日期控制*/}
         <div className={'date--control'}>
           {
             dateAry.map((date, index) => (
@@ -107,6 +106,8 @@ export default class extends Component {
             ))
           }
         </div>
+        
+        {/*会场名称*/}
         <div className={'topic--group'}>
           {
             this.state.topicGroup[this.state.whichDay].map((item, index) => (
@@ -116,10 +117,12 @@ export default class extends Component {
             ))
           }
         </div>
+        
         {/*会场轮播图*/}
         <div className={'topic--banner'}>
+          
+          {/*轮播图视窗*/}
           <div className='banner--window'>
-            {/*<ul className={'banner--body'} style={{left: -((this.state.topicIndex-1) * 403) + 'px'}}>*/}
             <ul className={'banner--body'}>
               {
                 this.state.bannerAry.map((item, index) => (
