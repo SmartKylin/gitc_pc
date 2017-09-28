@@ -15,12 +15,12 @@ export default class Nav extends React.Component{
                     <div><Link to={'/'}><p>GITC北京站</p></Link></div>
                     <div><Link to={'/'}><p>奖项评选报名</p></Link></div>
                     <div><Link to={'/issue'}><p>议题提交</p></Link></div>
-                    <div><Link to={'/'}><p>关于主办方</p></Link></div>
+                    <div><p><a href="http://www.kylinclub.org/">关于主办方</a></p></div>
                     <div><Link to={'/'}><p>加入我们</p></Link></div>
                 </div>
                 <div className="NavButton">
                     <div className="NavBtn"><a href="https://www.bagevent.com/event/768490">立即购买</a></div>
-                    <div className="NavBtn">我的门票</div>
+                    <div className="NavBtn"><Link to={'/ticket'}>我的门票</Link></div>
                 </div>
             </div>
         )
