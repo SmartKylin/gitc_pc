@@ -33,6 +33,10 @@
     width: 203px;
     align-items: center;
     justify-content: space-around;
+    a{
+      color: #fff;
+      text-decoration:none;
+    }
     .NavBtn{
       width: 98px;
       border: 2px solid #088faa;
@@ -42,6 +46,9 @@
       a{
         color: #fff;
         text-decoration:none;
+        &:hover {
+          color: #023fd6 ;
+        }
       }
       &:hover {
         color: #023fd6 ;
