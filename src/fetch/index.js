@@ -13,7 +13,10 @@ export const get = url => {
   return fetch(url, {
     Accept: 'application/json',
     // 设置请求可以跨域发送cookie
-    credentials: 'include'
+
+    credentials: 'include',
+    mode: 'cors',
+    cache: 'default'
   })
 }
 
@@ -26,3 +29,9 @@ export const post = (url, obj) => fetch(url, {
   credentials: 'include',
   body: formatUrlencoded(obj)
 });
+
+
+export default {
+  post,
+  get
+}
