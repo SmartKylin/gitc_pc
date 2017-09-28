@@ -3,8 +3,6 @@ import 'antd/dist/antd.css';
 import {issue} from "../../services/issue";
 import { message,Form, Icon, Input, Button, Checkbox ,Upload,Rate,Row,Col} from 'antd';
 import "./index.scss"
-
-
 const FormItem = Form.Item;
 const formItemLayout = {
     labelCol: { span: 7},
@@ -12,9 +10,6 @@ const formItemLayout = {
 };
 class NormalLoginForm extends Component {
 
-    componentWillMount() {
-
-    }
 
     handleSubmit = (e) => {
         e.preventDefault();
