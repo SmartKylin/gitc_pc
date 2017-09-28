@@ -26,10 +26,10 @@ export default (config => {
   
   // 调取某页全部人员
   // http://120.92.10.182:8000/api/gitc/person-4/all/list.json?token=1afb756d16740266efde290917ca1a8e
-  'pagepople':'/api/gitc/',
+  'getAllPeople':'/api/gitc/',
   
   
-  'pople':'/api/gitc/person-',
+  'people':'/api/gitc/person-',
 // 接口地址：http://120.92.10.182:8000/api/gitc/person-{library_id}/list.json
 
   // 获取门票列表
