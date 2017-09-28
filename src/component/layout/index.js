@@ -4,9 +4,6 @@ import Nav from "../navigation/index";
 import './index.scss'
 import Login from '../login/index.js'
 export default class Layout extends React.Component{
-    constructor(){
-        super()
-    }
 
     render(){
         return(
