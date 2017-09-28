@@ -6,7 +6,9 @@ import SpeechGuest from './speech-guest'
 import CooperationPartner from './partner'
 import Footer from './footer'
 
-export default class Home extends Component {
+import {BackTop} from 'antd'
+
+export default class extends Component {
   render() {
     return (
 
@@ -18,6 +20,7 @@ export default class Home extends Component {
         <SpeechGuest/>
         <CooperationPartner/>
         <Footer/>
+        <BackTop/>
       </div>
     )
   }

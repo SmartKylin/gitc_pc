@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
-import Home from '@/pages/home'
+import Home from '../pages/home'
 import Ticket from '../pages/ticket/index'
 import Issue from '../pages/issue/index'
 import Layout from '../component/layout'
