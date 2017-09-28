@@ -19,7 +19,8 @@ export default (config => {
   // 发送验证码
   'sendCode': '/api/gitc/code/',
   
-  'popleList':'/api/gitc/person-',
+  'peopleList':'/api/gitc/person-',
+  
   // 注册或者登陆
   'user': '/api/gitc/user/',
   
