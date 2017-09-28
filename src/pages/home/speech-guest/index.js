@@ -12,7 +12,7 @@ export default class extends Component {
   }
   // 产看更多
   catMore = () => {
-    // this.top = $(document).scrollTop();
+    this.top = $(document).scrollTop();
     this.setState({
       hasMore: true
     })
@@ -22,7 +22,7 @@ export default class extends Component {
     this.setState({
       hasMore: false
     })
-    // $(document).scrollTop(this.top)
+    $(document).scrollTop(this.top)
   }
   render () {
     return (
