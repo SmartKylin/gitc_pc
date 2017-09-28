@@ -27,7 +27,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-shangjia1"/>
+                  <i className="iconfont icon-duihua1"/>
                 </div>
               </div>
               <div className='english--title'>TECH TUTORRE</div>
@@ -59,7 +59,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-shangjia1"/>
+                  <i className="iconfont icon-jiangbei1"/>
                 </div>
               </div>
               <div className='english--title'>AWARDING CEREMONY</div>
@@ -77,7 +77,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-shangjia1"/>
+                  <i className="iconfont icon-heikeji"/>
                 </div>
               </div>
               <div className='english--title'>BLACK TECH AMUSEMENT</div>
