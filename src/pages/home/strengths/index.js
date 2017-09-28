@@ -9,7 +9,11 @@ export default class extends Component {
         <div className='strengths--body'>
           <div className='body--row'>
             <div className='strength--item'>
-              <div className='item--img--wrap'><div className='item--img'/></div>
+              <div className='item--img--wrap'>
+                <div className='item--img'>
+                  <i className="iconfont icon-shangjia1"/>
+                </div>
+              </div>
               <div className='english--title'>RESTAURANT EVOLUTI</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>品牌专场</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
@@ -21,7 +25,11 @@ export default class extends Component {
             </div>
   
             <div className='strength--item'>
-              <div className='item--img--wrap'><div className='item--img'/></div>
+              <div className='item--img--wrap'>
+                <div className='item--img'>
+                  <i className="iconfont icon-shangjia1"/>
+                </div>
+              </div>
               <div className='english--title'>TECH TUTORRE</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>Tech Tutorre</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
@@ -33,7 +41,11 @@ export default class extends Component {
             </div>
   
             <div className='strength--item'>
-              <div className='item--img--wrap'><div className='item--img'/></div>
+              <div className='item--img--wrap'>
+                <div className='item--img'>
+                  <i className="iconfont icon-shangjia1"/>
+                </div>
+              </div>
               <div className='english--title'>TECH+</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>Tech+</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
@@ -45,7 +57,11 @@ export default class extends Component {
             </div>
   
             <div className='strength--item'>
-              <div className='item--img--wrap'><div className='item--img'/></div>
+              <div className='item--img--wrap'>
+                <div className='item--img'>
+                  <i className="iconfont icon-shangjia1"/>
+                </div>
+              </div>
               <div className='english--title'>AWARDING CEREMONY</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>颁奖典礼</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
@@ -59,8 +75,12 @@ export default class extends Component {
           </div>
           <div className='body--row'>
             <div className='strength--item'>
-              <div className='item--img--wrap'><div className='item--img'/></div>
-              <div className='english--title'>BLACK TECH AMUSEMENT  </div>
+              <div className='item--img--wrap'>
+                <div className='item--img'>
+                  <i className="iconfont icon-shangjia1"/>
+                </div>
+              </div>
+              <div className='english--title'>BLACK TECH AMUSEMENT</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>黑科技游乐园</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
                 未来世界跨维度体验
@@ -71,7 +91,11 @@ export default class extends Component {
             </div>
     
             <div className='strength--item'>
-              <div className='item--img--wrap'><div className='item--img'/></div>
+              <div className='item--img--wrap'>
+                <div className='item--img'>
+                  <i className="iconfont icon-shangjia1"/>
+                </div>
+              </div>
               <div className='english--title'>INVITATION DINNER</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>邀请晚宴</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
@@ -81,7 +105,6 @@ export default class extends Component {
                 你最想认识的人他在游戏里
               </div>
             </div>
-  
           </div>
         </div>
       </div>
