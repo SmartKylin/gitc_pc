@@ -27,7 +27,7 @@ export default class extends Component {
               <div className='guest--item' key={index}>
               <div className="item--left">
                 <img src={defaultAvatar} alt=""/>
-                <div>
+                <div className='item--document'>
                   <i className="iconfont icon-chakanwendangjilu"/>
                   文档
                 </div>

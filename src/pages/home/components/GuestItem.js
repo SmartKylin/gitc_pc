@@ -24,7 +24,7 @@ export default class extends Component {
   render () {
     let {data, speech} = this.props
     return (
-     <div className={'guest--item'}>
+     <div className={'pic--guest--item'}>
        <div className={'guest--avatar--area'} >
          <img
          src={data.pic || defaultAvatar}

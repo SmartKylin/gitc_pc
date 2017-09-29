@@ -6,6 +6,7 @@ import {
   getDate2
 } from "../../../services/home";
 import BannerItem from './component/bannerItem'
+import MainMeeting from './component/mainMeetingItem'
 
 const dateAry = ['11月23日', '11月24日']
 
@@ -166,7 +167,12 @@ export default class extends Component {
                 <li key={index}
                     className={'banner--item ' + (this.state.topicIndex === index ? 'active' : '')}
                     >
-                  <BannerItem data={item}/>
+                  {
+                    ((this.state.whichDay === 0) && (item.name === '主会场')) ?
+                    <MainMeeting data={item}/>
+                    :
+                    <BannerItem data={item}/>
+                  }
                   </li>
                 ))
               }
