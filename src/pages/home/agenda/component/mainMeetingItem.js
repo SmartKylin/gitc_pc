@@ -23,7 +23,7 @@ export default class extends Component {
       </div>
       <div className='guest--list'>
         {
-          [0, 1, 2, 3, 4].map((item, index) => (
+          [0, 1, 2, 3, 4, 5].map((item, index) => (
           <div className='guest--item' key={index}>
             <div className="item--left">
               <img src={defaultAvatar} alt=""/>

@@ -6,7 +6,8 @@ export default class Nav extends React.Component{
     constructor(props){
         super(props)
         this.state={
-             btnshow:false
+             btnshow: false,
+             whichPath: '/home'
         }
     }
 
@@ -21,6 +22,7 @@ export default class Nav extends React.Component{
         }
         if(phone){
             this.props.history.push('/layout/ticket')
+
            
         }else{
             this.props.setLoginCb(cb)
@@ -37,16 +39,26 @@ export default class Nav extends React.Component{
                     <img src={logo} alt=""/>
                 </div>
                 <div className="NavList">
-                    <div><Link to={'/layout/home'}><p>首页</p></Link></div>
-                    <div><Link to={'/layout'}><p>GITC北京站</p></Link></div>
-                    <div><Link to={'/awards'}><p>奖项评选报名</p></Link></div>
-                    <div><Link to={'/layout/issue'}><p>议题提交</p></Link></div>
+
+                    <Link
+                        to={'/layout/home'}
+                        onClick={() => this.setState({whichPath: '/home'})}
+                        style={this.state.whichPath === '/home' ? {color: '#023fd6'} : null}
+                    >首页</Link>
+                    <Link to={'/layout'}>GITC北京站</Link>
+                    <Link to={'/awards'}>奖项评选报名</Link>
+                    <Link to={'/layout/issue'}
+                          onClick={() => this.setState({whichPath: '/issue'})}
+                          style={this.state.whichPath === '/issue' ? {color: '#023fd6'} : null}>议题提交</Link>
                     <div><p><a href="http://www.kylinclub.org/">关于主办方</a></p></div>
-                    <div><Link to={'/'}><p>加入我们</p></Link></div>
+                    <Link to={'/'}>加入我们</Link>
                 </div>
                 <div className="NavButton">
                     <div className="NavBtn"><a href="https://www.bagevent.com/event/768490">立即购买</a></div>
-                    <div className="NavBtn" onClick={this.handeClick.bind(this)}>我的门票</div>
+                    <div className="NavBtn"
+                         onClick={this.handeClick.bind(this)}
+                         style={this.state.whichPath === '/ticket' ? {color: '#023fd6'} : null}
+                    >我的门票</div>
                 </div>
             </div>
         )

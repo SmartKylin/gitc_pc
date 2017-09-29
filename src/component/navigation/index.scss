@@ -21,11 +21,11 @@
 
     a{
       color: #fff;
-      text-decoration:none;
+     text-decoration:none;
       cursor: pointer;
-      &:hover {
+      /* &:hover {
         color: #023fd6 ;
-      }
+      }*/
     }
   }
   .NavButton{
@@ -50,9 +50,9 @@
           color: #023fd6 ;
         }
       }
-      &:hover {
+      /*&:hover {
         color: #023fd6 ;
-      }
+      }*/
     }
   }
 }
