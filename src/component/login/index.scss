@@ -53,6 +53,7 @@
     background: #2b67ff;
     font-size: 20px;
     border-radius: 8px;
+    color: #fff;
   }
   .add-code{
     width: 130px;
@@ -65,6 +66,10 @@
     right: 0;
     top:-16px;
     position: absolute;
+    color: #fff;
+  }
+  .add-code :hover{
+    cursor:pointer
   }
 }
 .login-pop{

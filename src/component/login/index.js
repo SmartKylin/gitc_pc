@@ -73,10 +73,10 @@ export default class Login extends Component {
           <div >
             <p>验证码</p>
             <div className="code-box">
-              <input type="text" ref={code => this.code = code} />
-              <div className="add-code pa" onClick={this.checkCode.bind(this)}
-                style={{ background: this.state.coding ? '#2b67ff' : '#ccc' }}
-              >{this.state.coding ? '获取验证码' : '输入验证码'}</div>
+              <input type="password" ref={code => this.code = code} />
+              <a className="add-code pa" onClick={this.checkCode.bind(this)}
+                style={{ background: this.state.coding ? '#2b67ff' : '#959595' }}
+              >{this.state.coding ? '输入验证码' : '获取验证码'}</a>
             </div>
             <div className="login-btn" onClick={this.checkSign.bind(this)}>登陆</div>
           </div>
