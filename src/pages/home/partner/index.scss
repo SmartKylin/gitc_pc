@@ -19,6 +19,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /*width:100%;
+    height:20px;
+    //background-color:#f2f2f2;
+    text-align:center;
+    color:#000;
+    line-height:20px;
+    position:relative;
+
+
+    .area:after{
+      content:"";
+      width:100%;
+      height:1px;
+      background-color:red;
+      position:absolute;
+      bottom:50%;
+      z-index:1;
+      left:0;
+    }
+    .area--title{
+      z-index:2;
+      position: relative;
+      //background-color:#f2f2f2;
+      color: #fff;
+      padding:0 10px;
+    }*/
+
+   /* .area--title:before {
+      background: #293c6e;
+      border-bottom: 1px solid #293c6e;
+      z-index: 1000;
+    }
+
+    .area--title:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #293c6e;
+      color: #293c6e;
+    }*/
   }
 
   .link--group {
@@ -32,4 +73,7 @@
       justify-content: center;
     }
   }
+
+
+
 }

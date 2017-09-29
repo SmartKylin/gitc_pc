@@ -75,6 +75,8 @@
       width: 385px;
       height: 890px;
       margin: 0 9px;
+      background: #1b2d4c;
+      overflow-y: scroll;
       &.active {
         height: 915px;
       }
@@ -82,8 +84,8 @@
 
     .banner--window {
       width: 1209px;
-      //height: 915px;
-      height: 300px;
+      height: 915px;
+      //height: 300px;
       position: relative;
       overflow: hidden;
       margin: 20px 0;
