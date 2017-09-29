@@ -22,7 +22,7 @@ export default class Ticket extends Component {
   render() {
     // console.log(this.state.ticketLists, 'props22')
     return (
-      <div className="ticket-box-felx">
+      <div className="ticket-box-felx" style={{background:'#0d1427',minHeight:'700px'}}>
         <div className="conference--strengths">
           <div className="strengths--title strengths-color">我的门票</div>
         </div>

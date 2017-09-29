@@ -43,27 +43,27 @@ export default class Nav extends React.Component {
       </div>
       <div className="NavList">
         
+        <a href="http://www.thegitc.com/index.html">首页</a>
+        
         <Link
         to={'/layout/home'}
-        onClick={() => this.setState({whichPath: '/layout/home'})}
-        style={this.state.whichPath === '/layout/home' ? {color: '#023fd6'} : null}
-        >首页</Link>
-        <Link
-          to={'/'}
-          onClick={() => this.setState({whichPath: '/'})}
-          style={this.state.whichPath === '/' ? {color: '#023fd6'} : null}
+          onClick={() => this.setState({whichPath: '/layout/home'})}
+          style={this.state.whichPath === '/layout/home' ? {color: '#023fd6'} : null}
         >GITC北京站</Link>
+       
         <Link
           to={'/awards'}
           onClick={() => this.setState({whichPath: '/awards'})}
           style={this.state.whichPath === '/awards' ? {color: '#023fd6'} : null}
         >奖项评选报名</Link>
+        
         <Link to={'/layout/issue'}
               onClick={() => this.setState({whichPath: '/layout/issue'})}
               style={this.state.whichPath === '/layout/issue' ? {color: '#023fd6'} : null}
         >议题提交</Link>
-        <div><p><a href="http://www.kylinclub.org/">关于主办方</a></p></div>
-        <Link to={'/'}>加入我们</Link>
+        
+        <a href="http://www.kylinclub.org/">关于主办方</a>
+        <a href="http://www.thegitc.com/contact.html">加入我们</a>
       </div>
       <div className="NavButton">
         <div className="NavBtn"><a href="https://www.bagevent.com/event/768490">立即购买</a></div>
