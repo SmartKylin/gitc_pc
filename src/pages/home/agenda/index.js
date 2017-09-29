@@ -172,6 +172,7 @@ export default class extends Component {
               }
             </ul>
           </div>
+          
           <ul className='focus--list'>
             {
               this.state.topicGroup[this.state.whichDay].map((item, index) => (
