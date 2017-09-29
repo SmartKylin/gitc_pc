@@ -41,7 +41,6 @@ export default class Login extends Component {
       .then(res => res.json())
       .then(data => {
         message.info(data.msg)
-        console.log(data, 'code')
         this.setState({
           mobile: data.mobile
         })
@@ -59,11 +58,12 @@ export default class Login extends Component {
         }
       })
   }
+  
   render() {
-    console.log(this.state.popshow, 'pppp')
     return (
       <div className="login-pop" style={{ display: this.props.toggleshow ? "block" : 'none' }}>
         <div className="login-box">
+          <span className="close-pop-btn" onClick={this.props.closeClick}></span>
           <p>手机</p>
           <div className="phone-box">
             <input type="number" ref={mobile => this.mobile = mobile}
