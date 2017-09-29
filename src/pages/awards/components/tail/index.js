@@ -7,6 +7,7 @@ export default class Tail extends Component{
 
         return(
             <div className="TailBox">
+
                 <div className="TailBoxIner">
                     <div className="TailBoxImg"></div>
                     <div className="TailBoxChang">

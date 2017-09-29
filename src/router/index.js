@@ -16,13 +16,20 @@ export default class RouterMap extends Component {
     return (
     <div>
       <Router history={history}>
-          <Layout history={history}>
+          {/*<Layout history={history}>
               <Route exact path="/" component={Home}/>
             <Route  path="/home" component={Home}/>
             <Route  path="/ticket" component={Ticket}/>
             <Route  path="/issue" component={Issue}/>
             <Route  path="/awards" component={Awards}/>
-          </Layout>
+          </Layout>*/}
+          <Switch>
+              <Route exact path='/' component={Layout}/>
+
+              <Route path='/layout' component={Layout}/>
+              <Route  path="/awards" component={Awards}/>
+          </Switch>
+
       </Router>
     </div>
     )

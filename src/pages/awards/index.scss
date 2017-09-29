@@ -57,10 +57,10 @@
       }
     }
     .CentralSectionBox{
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width:100%;
       .CentralSectionTitle{
         width: 400px;
         height: 205px;
@@ -119,51 +119,90 @@
         display: flex;
         justify-content: space-between;
         width: 1065px;
-        margin-bottom: 234px;
         .CentralSectionBoxButtonA{
           width: 145px;
           height: 43px;
           line-height: 43px;
           text-align: center;
           font-size: 14px;
-          color:#fadc93;
           border: 1px solid #fadc93;
           border-radius: 45px;
-        }
-      }
-      .CentralSectionBoxProcess{
-        display: flex;
-        justify-content: space-between;
-        width: 1133px;
-        .CentralSectionBoxProcessA{
+          a{
+            text-decoration:none;
             color: #fadc93;
-            font-size: 52px;
+          }
+          &:hover{
+            color: #fff;
+            background:#fadc93 ;
+            cursor: pointer;
+            a{
+              text-decoration:none;
+              color: #fff;
+            }
+          }
         }
       }
-      .CentralSectionBoxXian{
-        width: 1092px;
-        height: 22px;
-        background: url("./images/奖项评选报名页面.jpg")no-repeat center;
-        margin-bottom: 40px;
-      }
-      .CentralSectionBoxDate{
+      .CentralSectionBoxBox{
         display: flex;
-        justify-content: space-between;
-        width: 1160px;
-        .CentralSectionBoxDateA{
-          color: #fadc93;
-          font-size: 13.9px;
-          .yuzhong{
-            text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        background: url("./images/动效.gif") no-repeat center rgba(0,0,0,1);
+        position: relative;
+        .dingwei{
+          position: absolute;
+          width:100%;
+          height: 100%;
+          background: black;
+          opacity: 0.9;
+        }
+        .dingweishang{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          position: relative;
+          z-index: 100;
+          .CentralSectionBoxProcess{
+            display: flex;
+
+            justify-content: space-between;
+            width: 1133px;
+            .CentralSectionBoxProcessA{
+              color: #fadc93;
+              font-size: 52px;
+            }
           }
-          .AA{
-            margin-left: 23px;
+          .CentralSectionBoxXian{
+            width: 1092px;
+            height: 22px;
+            background: url("./images/时间轴_05.png")no-repeat center;
+            margin-bottom: 40px;
           }
-          .BB{
-            margin-right: 20px;
+          .CentralSectionBoxDate{
+            display: flex;
+            justify-content: space-between;
+            width: 1160px;
+            .CentralSectionBoxDateA{
+              color: #fadc93;
+              font-size: 13.9px;
+              .yuzhong{
+                text-align: center;
+              }
+              .AA{
+                margin-left: 23px;
+              }
+              .BB{
+                margin-right: 20px;
+              }
+            }
           }
         }
+
       }
+
     }
 
     .ScoreBox{
@@ -179,7 +218,6 @@
         font-size: 28px;
         color: #fadc93;
         background: url("./images/biaoti.png") no-repeat center;
-        margin-bottom: 70px;
       }
       .ScoreTitleBox{
         display: flex;
@@ -227,7 +265,14 @@
       }
 
     }
-
+    .ZanzhuBox{
+      margin-top: 200px;
+      margin-bottom: 50px;
+      margin-left: -140px;
+      width: 960px;
+      height: 265px;
+      background: url("./images/赞助商.jpg") no-repeat center;
+    }
     .TailBox{
       width: 100%;
       height: 81px;

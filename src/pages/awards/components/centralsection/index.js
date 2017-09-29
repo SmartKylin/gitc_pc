@@ -48,59 +48,63 @@ export default class CentralSection extends Component{
                 </div>
 
                 <div className="CentralSectionBoxButton">
-                    <div className="CentralSectionBoxButtonA">前去报名</div>
-                    <div className="CentralSectionBoxButtonA">前去报名</div>
-                    <div className="CentralSectionBoxButtonA">前去报名</div>
+                    <div className="CentralSectionBoxButtonA"><a href="https://www.bagevent.com/event/768490">前去报名</a></div>
+                    <div className="CentralSectionBoxButtonA"><a href="https://www.bagevent.com/event/768490">前去报名</a></div>
+                    <div className="CentralSectionBoxButtonA"><a href="https://www.bagevent.com/event/768490">前去报名</a></div>
                 </div>
 
+                 <div className="CentralSectionBoxBox">
+                     <div className="dingwei"></div>
+                     <div className="dingweishang">
+                         <div className="CentralSectionBoxProcess">
+                             <div className="iconfont icon-baoming CentralSectionBoxProcessA" >
 
-                 <div className="CentralSectionBoxProcess">
-                      <div className="iconfont icon-baoming CentralSectionBoxProcessA" >
+                             </div>
+                             <div className="iconfont icon-baomingjiezhi CentralSectionBoxProcessA" >
 
-                      </div>
-                     <div className="iconfont icon-baomingjiezhi CentralSectionBoxProcessA" >
+                             </div>
+                             <div className="iconfont icon-shujucaiji CentralSectionBoxProcessA" >
 
-                     </div>
-                     <div className="iconfont icon-shujucaiji CentralSectionBoxProcessA" >
+                             </div>
+                             <div className="iconfont icon-toupiao CentralSectionBoxProcessA" >
 
-                     </div>
-                     <div className="iconfont icon-toupiao CentralSectionBoxProcessA" >
+                             </div>
+                             <div className="iconfont icon-banjiangyishi CentralSectionBoxProcessA" >
 
-                     </div>
-                     <div className="iconfont icon-banjiangyishi CentralSectionBoxProcessA" >
-
-                     </div>
-                 </div>
-                 <div className="CentralSectionBoxXian"></div>
-                 <div className="CentralSectionBoxDate">
-                     <div className="CentralSectionBoxDateA">
-                         <div className="yuzhong">
-                             <div>10月初-20日</div>
-                             <div>启动&报名</div>
+                             </div>
                          </div>
-                     </div>
-                     <div className="CentralSectionBoxDateA">
-                         <div className="yuzhong AA">
-                             <div>10月20日</div>
-                             <div>报截止名</div>
-                         </div>
-                     </div>
-                     <div className="CentralSectionBoxDateA">
-                         <div className="yuzhong">
-                             <div>10月21日-11月09日</div>
-                             <div>数据采集与评审</div>
-                         </div>
-                     </div>
-                     <div className="CentralSectionBoxDateA">
-                         <div className="yuzhong BB">
-                             <div>11月10日-20日</div>
-                             <div>投票与评选</div>
-                         </div>
-                     </div>
-                     <div className="CentralSectionBoxDateA">
-                         <div className="yuzhong">
-                             <div>11月23日</div>
-                             <div>公布&颁奖</div>
+                         <div className="CentralSectionBoxXian"></div>
+                         <div className="CentralSectionBoxDate">
+                             <div className="CentralSectionBoxDateA">
+                                 <div className="yuzhong">
+                                     <div>10月初-20日</div>
+                                     <div>启动&报名</div>
+                                 </div>
+                             </div>
+                             <div className="CentralSectionBoxDateA">
+                                 <div className="yuzhong AA">
+                                     <div>10月20日</div>
+                                     <div>报截止名</div>
+                                 </div>
+                             </div>
+                             <div className="CentralSectionBoxDateA">
+                                 <div className="yuzhong">
+                                     <div>10月21日-11月09日</div>
+                                     <div>数据采集与评审</div>
+                                 </div>
+                             </div>
+                             <div className="CentralSectionBoxDateA">
+                                 <div className="yuzhong BB">
+                                     <div>11月10日-20日</div>
+                                     <div>投票与评选</div>
+                                 </div>
+                             </div>
+                             <div className="CentralSectionBoxDateA">
+                                 <div className="yuzhong">
+                                     <div>11月23日</div>
+                                     <div>公布&颁奖</div>
+                                 </div>
+                             </div>
                          </div>
                      </div>
                  </div>

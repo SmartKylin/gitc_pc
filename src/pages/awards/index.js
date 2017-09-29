@@ -5,6 +5,8 @@ import Event from "./components/event/index";
 import CentralSection from "./components/centralsection/index";
 import Score from "./components/score/index";
 import Tail from "./components/tail/index";
+import Zanzhu from "./components/zanzhu/index";
+import { BackTop } from 'antd';
 export default class Awards extends React.Component{
 
     constructor (props) {
@@ -19,8 +21,14 @@ export default class Awards extends React.Component{
                     <Event/>
                     <CentralSection/>
                     <Score/>
+                    <Zanzhu/>
                     <Tail/>
+                    <div>
+                        <BackTop />
+                        <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> gray </strong>
+                    </div>
                 </div>
+
             </div>
         )
     }

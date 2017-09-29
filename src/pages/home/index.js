@@ -14,7 +14,7 @@ export default class extends Component {
   render() {
     return (
 
-      <div style={{color: '#fff'}}>
+      <div style={{color: '#fff',background:'#0d1427'}}>
         <Strengths/>
         <Topics/>
         <Agenda/>
