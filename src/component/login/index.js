@@ -52,9 +52,9 @@ export default class Login extends Component {
       .then(data => {
         message.info(data.msg)
         if (data.status) {
+          localStorage.setItem('phone', this.state.mobile)
           this.props.closeLoginBox()
           this.props.cb && this.props.cb()
-          localStorage.setItem('phone', this.state.mobile)
         }
       })
   }
