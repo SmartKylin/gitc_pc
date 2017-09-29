@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../images/lunbotu/banner_01.png"
 import img2 from "../../images/lunbotu/banner_01.png"
 import img3 from "../../images/lunbotu/banner_01.png"
-import "./index.css"
+import "./index.scss"
 import "jquery"
 import "swiper/dist/css/swiper.min.css"
 import "swiper/dist/js/swiper.min.js"
@@ -54,7 +54,7 @@ export default class SwiperMy extends React.Component {
     
     new Swiper(this.refs.container, {
       loop: true,
-      effect: 'coverflow',
+      // effect: 'coverflow',
       autoplay: 3000,
       grabCursor: true,
       speed: 1000,
