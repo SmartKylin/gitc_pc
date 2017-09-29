@@ -37,8 +37,9 @@ export default class SwiperMy extends React.Component {
       </div>
       
       {/*<div className="swiper-pagination" ref="pagination"></div>*/}
-      <div className="swiper-button-prev swiper-button-blue" ref="prev"></div>
-      <div className="swiper-button-next swiper-button-blue" ref="next"></div>
+      
+     {/* <div className="swiper-button-prev swiper-button-blue" ref="prev"></div>
+      <div className="swiper-button-next swiper-button-blue" ref="next"></div>*/}
       
     </div>
     )
@@ -49,7 +50,7 @@ export default class SwiperMy extends React.Component {
     new Swiper(this.refs.container, {
       loop: true,
       // effect: 'coverflow',
-      autoplay: 3000,
+      // autoplay: 3000,
       grabCursor: true,
       speed: 1000,
       autoplayDisableOnInteraction: false,

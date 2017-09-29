@@ -2,7 +2,7 @@
 
 .topic--item {
   width: 370px;
-  height: 255px;
+  height: 290px;
   border-radius: 8px;
   position: relative;
   background: #172742;
@@ -50,7 +50,7 @@
     margin-top: 20px;
     padding: 0 24px 10px 24px;
     line-height: 20px;
-    overflow-y: scroll;
+    //overflow-y: scroll;
     user-select: none;
   }
 }
