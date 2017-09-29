@@ -7,7 +7,6 @@ import "jquery"
 import "swiper/dist/css/swiper.min.css"
 import "swiper/dist/js/swiper.min.js"
 import Swiper from "swiper/dist/js/swiper.js"
-import {Link} from 'react-router-dom'
 export default class SwiperMy extends React.Component{
 
     componentWillMount(){
@@ -38,7 +37,7 @@ export default class SwiperMy extends React.Component{
     }
     componentDidMount(){
 
-        let Mys = new Swiper(this.refs.container,{
+            new Swiper(this.refs.container,{
             loop:true,
             autoplay : 3000,
             speed:1000,

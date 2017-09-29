@@ -12,15 +12,15 @@ export default (config => {
     return copy
   }, {})
 })({
+  // 发送验证码
+  'sendCode': '/api/gitc/code/',
 
     //议题提交
    'issue':'/api/gitc/meetissue/',
-
-  // 发送验证码
-  'sendCode': '/api/gitc/code/',
   
   'peopleList':'/api/gitc/person-',
   
+
   // 注册或者登陆
   'user': '/api/gitc/user/',
   
@@ -28,8 +28,8 @@ export default (config => {
   // http://120.92.10.182:8000/api/gitc/person-4/all/list.json?token=1afb756d16740266efde290917ca1a8e
   'getAllPeople':'/api/gitc/',
   
-  
   'people':'/api/gitc/person-',
+
 // 接口地址：http://120.92.10.182:8000/api/gitc/person-{library_id}/list.json
 
   // 获取门票列表

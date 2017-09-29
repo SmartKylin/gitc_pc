@@ -1,17 +1,19 @@
-
-.ticket-box{
+.ticket-box-felx{
   display: flex;
-   flex-direction:column;
-   justify-content:center;
+  flex-direction:  column;
+  align-items: center;
+}
+.ticket-box{
+   margin-bottom: 30px;
   .ticket-content{
-    width: 984px;
+    width:984px;
     height:294px;
     background: #fff;
     border-radius: 9px;
     display: flex;
     .ticket-content-left{
       padding: 38px 0 0 38px;
-      width: 58%;
+      width: 53%;
       height: 100%;
       color: #0d1472;
       .ticket-content-left-p{
@@ -44,7 +46,7 @@
       .ticket-time-icon{
         width: 14px;
         height: 14px;
-        background: url(../../images/time.png);
+        background: url(../../../images/time.png);
         background-size: cover;
         display: inline-block
       }
@@ -52,14 +54,14 @@
         width: 14px;
         height: 14px;
         margin-left: 24px;
-        background: url(../../images/dw.png);
+        background: url(../../../images/dw.png);
         background-size: cover;
         display: inline-block
       }
       .logo-icon-zzs{
         width: 46px;
         height: 42px;
-        background: url(../../images/mp.png);
+        background: url(../../../images/mp.png);
         background-size: cover;
       }
       .logo-content-box{
@@ -71,21 +73,22 @@
       }
     }
     .ticket-content-right{
-      width: 42%;
+      padding: 28px 38px 0 0;
+      width: 46%;
       height: 100%;
       color: #101729;
       .code-font{
         font-size: 18px;
-        padding-left: 32px;
+        padding-left: 64px;
         margin-top: 4px;
       }
       .ticket-content-right-title{
         font-weight: bold;
-        margin: 64px 0 16px 0;
+        margin:24px 0 16px 0;
         font-size: 12px;
       }
       .ticket-content-right-p{
-        line-height: 1.5;
+        line-height: 1.7;
         font-size: 12px;
       }
       .er-code{
@@ -98,7 +101,7 @@
     }
   }
   .ticket-box-bottom{
-    width: 946px;
+    width: 950px;
     height: 12px;
     display: flex;
     .ticket-bottom-left{
@@ -118,6 +121,7 @@
     justify-content:center;
   }
 }
+
 body{
   background: #0d1427
 }
