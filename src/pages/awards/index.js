@@ -1,23 +1,26 @@
 import React from 'react';
 import './index.scss'
-import Nav from "../../component/navigation/index";
-import SwiperMy from "../../component/swiper/index";
+import First from "./components/first/index";
+import Event from "./components/event/index";
+import CentralSection from "./components/centralsection/index";
+import Score from "./components/score/index";
+import Tail from "./components/tail/index";
 export default class Awards extends React.Component{
 
     constructor (props) {
         super(props)
     }
-    componentWillMount () {
-        this.props.history.hiddenLayout()
-    }
-    // componentWillUnmount () {
-    //     this.props.history.showLayout()
-    // }
+
     render (){
         return(
             <div className="AwardsBox">
-                <Nav/>
-                <SwiperMy/>
+                <First/>
+                <div className="AwardsLaout">
+                    <Event/>
+                    <CentralSection/>
+                    <Score/>
+                    <Tail/>
+                </div>
             </div>
         )
     }

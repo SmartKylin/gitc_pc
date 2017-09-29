@@ -11,6 +11,10 @@ const formItemLayout = {
 class NormalLoginForm extends Component {
 
 
+    componentDidMount(){
+        window.parent.scrollTo(0, 700);
+    }
+
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {

@@ -1,0 +1,263 @@
+
+.AwardsBox{
+  background:#000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  height: 100%;
+  .FirstBox{
+    width:100%;
+    height:100%;
+    .FirstBanner{
+      width: 100%;
+      height: 1080px;
+      background: url("./images/awardsbanner.png") no-repeat center;
+    }
+  }
+  .AwardsLaout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .EventBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+      .EventTitle{
+        width: 400px;
+        height: 205px;
+        line-height: 205px;
+        text-align: center;
+        font-size: 28px;
+        color: #fadc93;
+        background: url("./images/biaoti.png") no-repeat center;
+      }
+      .EventBoxText{
+        width: 1022px;
+        display: flex;
+        justify-content: space-between;
+        .EventIcon{
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          transform:rotate(45deg);
+          background: #a5a5a5;
+        }
+        .EvenText{
+          width:990px;
+          font-size: 14px;
+          color: #a5a5a5;
+          line-height: 28px;
+          margin-top: -10px;
+          margin-bottom: 38px;
+        }
+
+      }
+    }
+    .CentralSectionBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+      .CentralSectionTitle{
+        width: 400px;
+        height: 205px;
+        line-height: 205px;
+        text-align: center;
+        font-size: 28px;
+        color: #fadc93;
+        background: url("./images/biaoti.png") no-repeat center;
+      }
+      .CentralSectionIconImg{
+        display: flex;
+        justify-content: space-between;
+        width: 985px;
+        height: 213px;
+        margin-bottom: 20px;
+        .Img{
+          width: 72px;
+          background: url("./images/jiangbei.png") no-repeat center;
+        }
+      }
+      .CentralSectionBoxText{
+        display: flex;
+        justify-content: space-between;
+        width: 1051px;
+        margin-bottom: -2px;
+        .CentralSectionText{
+          font-size: 22px;
+          color:#fadc93;
+        }
+      }
+      .CentralSectionBoxTextBottom{
+        display: flex;
+        justify-content: space-between;
+        width: 1090px;
+        margin-bottom: 33px;
+        .CentralSectionBoxBottomText{
+          font-size: 14px;
+          color:#fadc93;
+        }
+      }
+      .CentralSectionBoxPrize{
+        display: flex;
+        justify-content: space-between;
+        width: 1165px;
+        margin-bottom: 41px;
+        .CentralSectionBoxPrizeInner{
+          font-size: 14px;
+          color:#fadc93;
+          .CentralSectionBoxPrizeInnerOne{
+            line-height: 24px;
+            color: #a5a5a5;
+          }
+        }
+      }
+      .CentralSectionBoxButton{
+        display: flex;
+        justify-content: space-between;
+        width: 1065px;
+        margin-bottom: 234px;
+        .CentralSectionBoxButtonA{
+          width: 145px;
+          height: 43px;
+          line-height: 43px;
+          text-align: center;
+          font-size: 14px;
+          color:#fadc93;
+          border: 1px solid #fadc93;
+          border-radius: 45px;
+        }
+      }
+      .CentralSectionBoxProcess{
+        display: flex;
+        justify-content: space-between;
+        width: 1133px;
+        .CentralSectionBoxProcessA{
+            color: #fadc93;
+            font-size: 52px;
+        }
+      }
+      .CentralSectionBoxXian{
+        width: 1092px;
+        height: 22px;
+        background: url("./images/奖项评选报名页面.jpg")no-repeat center;
+        margin-bottom: 40px;
+      }
+      .CentralSectionBoxDate{
+        display: flex;
+        justify-content: space-between;
+        width: 1160px;
+        .CentralSectionBoxDateA{
+          color: #fadc93;
+          font-size: 13.9px;
+          .yuzhong{
+            text-align: center;
+          }
+          .AA{
+            margin-left: 23px;
+          }
+          .BB{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .ScoreBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+      .ScoreTitle{
+        width: 400px;
+        height: 205px;
+        line-height: 205px;
+        text-align: center;
+        font-size: 28px;
+        color: #fadc93;
+        background: url("./images/biaoti.png") no-repeat center;
+        margin-bottom: 70px;
+      }
+      .ScoreTitleBox{
+        display: flex;
+        justify-content: flex-start;
+        width: 1106px;
+        .ScoreTitleBoxA{
+          width:670px;
+          font-size: 26px;
+          color:#fadc93;
+        }
+        .ScoreTitleBoxAA{
+          font-size: 26px;
+          color:#fadc93;
+        }
+      }
+
+      .ScoreTitleBoxEnglish{
+        display: flex;
+        justify-content: flex-start;
+        width: 1106px;
+        margin-bottom: 40px;
+        .ScoreTitleBoxEnglishA{
+          width:1040px;
+          font-size: 12px;
+          color:#fadc93;
+        }
+        .ScoreTitleBoxEnglishAA{
+          width:670px;
+          font-size: 12px;
+          color:#fadc93;
+        }
+      }
+
+      .ScoreTitleBoxRule{
+        display: flex;
+        justify-content: space-between;
+        width: 1106px;
+        .ScoreTitleBoxRuleA{
+          font-size: 12px;
+          color:#a5a5a5;
+          div{
+            line-height: 24px;
+          }
+        }
+      }
+
+    }
+
+    .TailBox{
+      width: 100%;
+      height: 81px;
+      border-top: 2px solid #262629;
+      line-height: 81px;
+      text-align: center;
+      .TailBoxIner{
+        width: 1040px;
+        display: flex;
+        justify-content: space-around;
+        .TailBoxChang{
+          width: 351px;
+          display: flex;
+          margin-right: -600px;
+          justify-content: space-between;
+          .TailBoxText{
+            color: #a5a5a5;
+            margin-right: 50px;
+          }
+        }
+        .TailBoxImg{
+          margin-top: 20px;
+          width: 40px;
+          height: 40px;
+          margin-left: -200px;
+          background: url("./images/奖项评选报名页面_07.jpg") no-repeat center;
+        }
+
+      }
+    }
+
+  }
+}
