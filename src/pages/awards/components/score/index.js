@@ -27,9 +27,8 @@ export default class Score extends Component{
                         <div>多平台、多人次投票有效，累计计分。同一推荐内容多平台发布，投票数累计有效。</div>
                     </div>
                     <div className="ScoreTitleBoxRuleA">
-                        <div>大会主席团和专家顾问团组成奖项评委会，召开评审会议，根据报名申请进行奖项</div>
-                        <div>大会主席团和专家顾问团组成奖项评委会，召开评审会议，根据报名申请进行奖项</div>
-                        <div>监督核查。</div>
+                        <div>大会主席团和专家顾问团组成奖项评委会，召开评审会议，根据报名申请进行奖项评选，</div>
+                        <div>综合商议后评选出最终获奖入围名单。奖项评选过程与结果将由大会组委会监督核查。</div>
                         <div>投票：1票=1分</div>
                     </div>
                 </div>

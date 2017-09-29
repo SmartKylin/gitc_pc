@@ -50,22 +50,23 @@ export default class extends Component {
                <i className="iconfont icon-youtube"/>
                Youtube
              </div>
-             <div>
+             {/*<div>
                <i className="iconfont icon-wechat"/>
                Wechat
              </div>
              <div>
                <i className="iconfont icon-weibo"/>
                Weibo
-             </div>
+             </div>*/}
            </div>
            <div className="external--link">
              <div>首页</div>
              <div>上海站</div>
-             <div>深圳站</div>
-             <div>成都站</div>
+             {/*<div>深圳站</div>*/}
+             {/*<div>成都站</div>*/}
              <div>北京站</div>
-             <div>加入麒麟会</div>
+             <div>杭州站</div>
+             <div>加入我们</div>
              <div>赞助合作</div>
            </div>
          </div>
