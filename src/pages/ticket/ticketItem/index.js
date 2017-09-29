@@ -38,7 +38,7 @@ export default class TicketItem extends Component {
   const {data}=this.props
     return (
 
-      <div className="ticket-box" style={{background:'#0d1427',minHeight:'500px'}}>
+      <div className="ticket-box" style={{background:'#0d1427',minHeight:'800px'}}>
         <div className="ticket-content">
           <div className="ticket-content-left">
             <h3 className="content-left-title">GITC2017全球互联网技术大会</h3>

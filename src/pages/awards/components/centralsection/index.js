@@ -48,9 +48,9 @@ export default class CentralSection extends Component{
                 </div>
 
                 <div className="CentralSectionBoxButton">
-                    <div className="CentralSectionBoxButtonA"><a href="https://www.bagevent.com/event/768490">前去报名</a></div>
-                    <div className="CentralSectionBoxButtonA"><a href="https://www.bagevent.com/event/768490">前去报名</a></div>
-                    <div className="CentralSectionBoxButtonA"><a href="https://www.bagevent.com/event/768490">前去报名</a></div>
+                    <div className="CentralSectionBoxButtonA"><a href="https://jinshuju.net/f/1HEL6C">前去报名</a></div>
+                    <div className="CentralSectionBoxButtonA"><a href="https://jinshuju.net/f/1HEL6C">前去报名</a></div>
+                    <div className="CentralSectionBoxButtonA"><a href="https://jinshuju.net/f/1HEL6C">前去报名</a></div>
                 </div>
 
                  <div className="CentralSectionBoxBox">

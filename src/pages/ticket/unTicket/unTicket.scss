@@ -1,0 +1,21 @@
+.unticket-box{
+  width: 1006px;
+  height: 448px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 9px;
+    .unticket-icon{
+      width: 204px;
+      height: 166px;
+      background: url(../../../images/unTicket.png);
+      background-size: cover;
+      margin: 84px auto 0;
+    }
+    p{
+      width: 100%;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #000
+    }
+}

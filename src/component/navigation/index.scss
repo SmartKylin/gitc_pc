@@ -12,17 +12,22 @@
   background-color: rgba(0,0,0,0.5);
   .NavLog{
     cursor: pointer;
+    margin-left: -300px;
   }
   .NavList{
     display: flex;
-    width: 500px;
+    width: 656px;
     align-items: center;
+    margin-right: -200px;
     justify-content: space-around;
-
+    .NavListBox{
+      width: 462px;
+    }
     a{
       color: #fff;
      text-decoration:none;
       cursor: pointer;
+      padding: 0 4px;
       /* &:hover {
         color: #023fd6 ;
       }*/
