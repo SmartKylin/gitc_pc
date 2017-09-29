@@ -3,6 +3,11 @@ import './App.scss';
 import RouterMap from '../router'
 
 class App extends Component {
+  componentDidMount(){
+    window.unload=()=>{
+    localStorage.removeItem("phone")
+  }
+  }
   render() {
     return (
       <div className="App">
