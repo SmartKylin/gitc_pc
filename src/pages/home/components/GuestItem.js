@@ -6,7 +6,7 @@ export default class extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      guestBoxVisible: false
+      guestBoxVisible: false,
     }
   }
   /*componentDidMount () {
@@ -29,10 +29,21 @@ export default class extends Component {
          <img
          src={data.pic || defaultAvatar}
          className={'guest--avatar'}
-         onMouseEnter={() => {this.setState({guestBoxVisible: true})}}/>
+         onMouseEnter={
+           this.props.canPop ?
+           () => {this.setState({guestBoxVisible: true})}
+           :
+           null
+         }/>
          <div className="guest--detail--box"
               style={{visibility: this.state.guestBoxVisible ? 'visible' : 'hidden'}}
-              onMouseLeave={() => this.setState({ guestBoxVisible: false})}>
+              onMouseLeave={
+                this.props.canPop ?
+                () => this.setState({ guestBoxVisible: false})
+                :
+                null
+              }
+          >
            <img className="small--avatar" src={data.pic || defaultAvatar}/>
            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
              <div style={{marginTop: '44px', fontSize: '16px'}}>{data.name}</div>

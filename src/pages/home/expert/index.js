@@ -38,11 +38,11 @@ export default class extends Component {
   render () {
     return (
       <div className={'speech--guest'}>
-        <div className='speech--title'>演讲嘉宾</div>
+        <div className='speech--title'>专家顾问团</div>
         <div className='speech--body'>
           {
             this.state.data.length && this.state.data.slice(0, 15).map((item, index) => (
-              <GuestItem key={index} speech={true} data={item} canPop={true}/>
+              <GuestItem key={index} speech={true} data={item}/>
             ))
           }
         </div>
@@ -52,7 +52,7 @@ export default class extends Component {
           <div className='speech--more'>
             {
               this.state.data.length && this.state.data.slice(15).map((item, index) => (
-              <GuestItem key={index} speech={true} data={item} canPop={true}/>
+              <GuestItem key={index} speech={true} data={item}/>
               ))
             }
           </div> : null

@@ -30,8 +30,8 @@ export default class extends Component {
                   <i className="iconfont icon-duihua1"/>
                 </div>
               </div>
-              <div className='english--title'>TECH TUTORRE</div>
-              <div style={{marginTop: '8px', fontSize: '16px'}}>Tech Tutorre</div>
+              <div className='english--title'>TECH TUTOR</div>
+              <div style={{marginTop: '8px', fontSize: '16px'}}>Tech Tutor</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
                 掌握最强最先进的技术的
               </div>
@@ -43,7 +43,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-shangjia1"/>
+                  <i className="iconfont icon-munters_chuangxin"/>
                 </div>
               </div>
               <div className='english--title'>TECH+</div>
@@ -93,7 +93,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-shangjia1"/>
+                  <i className="iconfont icon-huangguan" style={{fontSize: '60px'}}/>
                 </div>
               </div>
               <div className='english--title'>INVITATION DINNER</div>

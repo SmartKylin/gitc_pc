@@ -5,6 +5,9 @@ import Agenda from './agenda'
 import SpeechGuest from './speech-guest'
 import CooperationPartner from './partner'
 import Footer from './footer'
+import Expert from './expert'
+import Presidium from './presidium'
+
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {BackTop} from 'antd'
@@ -17,7 +20,9 @@ export default class extends Component {
       <div style={{color: '#fff',background:'#0d1427'}}>
         <Strengths/>
         <Topics/>
-        <Agenda/>
+        {/*<Agenda/>*/}
+        <Presidium/>
+        <Expert/>
         <SpeechGuest/>
         <CooperationPartner/>
         <Footer/>
