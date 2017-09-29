@@ -9,6 +9,15 @@
   margin:-175px 0 0 -242px;
   padding: 66px 58px 0 58px;
   z-index: 99999999999999 !important;
+  .close-pop-btn{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    background: url(../../images/close.svg);
+    background-size: cover
+  }
   .phone-box{
     width: 100%;
     height: 29px;
@@ -44,6 +53,7 @@
     background: #2b67ff;
     font-size: 20px;
     border-radius: 8px;
+    color: #fff;
   }
   .add-code{
     width: 130px;
@@ -56,6 +66,10 @@
     right: 0;
     top:-16px;
     position: absolute;
+    color: #fff;
+  }
+  .add-code :hover{
+    cursor:pointer
   }
 }
 .login-pop{

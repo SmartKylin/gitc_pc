@@ -41,7 +41,6 @@ export default class Login extends Component {
       .then(res => res.json())
       .then(data => {
         message.info(data.msg)
-        console.log(data, 'code')
         this.setState({
           mobile: data.mobile
         })
@@ -59,11 +58,12 @@ export default class Login extends Component {
         }
       })
   }
+  
   render() {
-    console.log(this.state.popshow, 'pppp')
     return (
       <div className="login-pop" style={{ display: this.props.toggleshow ? "block" : 'none' }}>
         <div className="login-box">
+          <span className="close-pop-btn" onClick={this.props.closeClick}></span>
           <p>手机</p>
           <div className="phone-box">
             <input type="number" ref={mobile => this.mobile = mobile}
@@ -73,10 +73,10 @@ export default class Login extends Component {
           <div >
             <p>验证码</p>
             <div className="code-box">
-              <input type="text" ref={code => this.code = code} />
-              <div className="add-code pa" onClick={this.checkCode.bind(this)}
-                style={{ background: this.state.coding ? '#2b67ff' : '#ccc' }}
-              >{this.state.coding ? '获取验证码' : '输入验证码'}</div>
+              <input type="password" ref={code => this.code = code} />
+              <a className="add-code pa" onClick={this.checkCode.bind(this)}
+                style={{ background: this.state.coding ? '#2b67ff' : '#959595' }}
+              >{this.state.coding ? '输入验证码' : '获取验证码'}</a>
             </div>
             <div className="login-btn" onClick={this.checkSign.bind(this)}>登陆</div>
           </div>

@@ -3,7 +3,6 @@ import SwiperMy from "../swiper/index";
 import Nav from "../navigation/index";
 import './index.scss'
 import Login from '../login/index.js'
-
 export default class Layout extends React.Component {
     constructor(props) {
         super(props)
@@ -14,7 +13,6 @@ export default class Layout extends React.Component {
     }
 
     toggleClick() {
-        alert('进入toggle,改变state')
         this.setState({
             showhidden: true
         })
@@ -30,12 +28,17 @@ export default class Layout extends React.Component {
             cb
         })
     }
+    closeClick=()=>{
+        this.setState({
+            showhidden: false
+
+        })
+    }
     render() {
-        console.log(this.state.showhidden, 'll')
         return (
             <div className="layoutBox">
                 <Nav history={this.props.history} onClick={this.toggleClick.bind(this)} setLoginCb={this.setLoginCb}/>
-                <Login toggleshow={this.state.showhidden} closeLoginBox={this.closeLoginBox} cb={this.state.cb}/>
+                <Login toggleshow={this.state.showhidden} closeLoginBox={this.closeLoginBox} cb={this.state.cb}  closeClick={this.closeClick}/>
                 <div className="layoutUpper">
                     <SwiperMy />
                 </div>
