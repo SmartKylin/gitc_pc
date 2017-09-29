@@ -37,15 +37,9 @@ export default class SwiperMy extends React.Component {
       </div>
       
       {/*<div className="swiper-pagination" ref="pagination"></div>*/}
-      {
-        this.state.btnSwitchVisible ?
-        <div>
-          <div className="swiper-button-prev swiper-button-white" ref="prev"></div>
-          <div className="swiper-button-next swiper-button-white" ref="next"></div>
-        </div>
-        :
-        null
-      }
+      <div className="swiper-button-prev swiper-button-blue" ref="prev"></div>
+      <div className="swiper-button-next swiper-button-blue" ref="next"></div>
+      
     </div>
     )
   }
@@ -62,6 +56,7 @@ export default class SwiperMy extends React.Component {
       // paginationType: 'fraction',
       prevButton: this.refs.prev,
       nextButton: this.refs.next,
+      observe: true
     })
   }
   
