@@ -60,7 +60,8 @@ export default class Nav extends React.Component {
         >奖项评选报名</Link>
         <Link to={'/layout/issue'}
               onClick={() => this.setState({whichPath: '/layout/issue'})}
-              style={this.state.whichPath === '/issue' ? {color: '#023fd6'} : null}>议题提交</Link>
+              style={this.state.whichPath === '/layout/issue' ? {color: '#023fd6'} : null}
+        >议题提交</Link>
         <div><p><a href="http://www.kylinclub.org/">关于主办方</a></p></div>
         <Link to={'/'}>加入我们</Link>
       </div>

@@ -12,10 +12,7 @@ export default class Tail extends Component{
                     <div className="TailBoxImg"></div>
                     <div className="TailBoxChang">
                         <div className="TailBoxText">
-                            京CP备14045833号-1
-                        </div>
-                        <div className="TailBoxText">
-                            京公网安备11010200322
+                            京CP备14045833号-1 &nbsp;   京公网安备11010200322
                         </div>
                     </div>
 

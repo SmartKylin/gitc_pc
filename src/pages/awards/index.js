@@ -7,6 +7,7 @@ import Score from "./components/score/index";
 import Tail from "./components/tail/index";
 import Zanzhu from "./components/zanzhu/index";
 import { BackTop } from 'antd';
+import Nav from "../../component/navigation/index";
 export default class Awards extends React.Component{
 
     constructor (props) {
@@ -16,6 +17,7 @@ export default class Awards extends React.Component{
     render (){
         return(
             <div className="AwardsBox">
+                <Nav/>
                 <First/>
                 <div className="AwardsLaout">
                     <Event/>

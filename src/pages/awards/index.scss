@@ -285,13 +285,14 @@
         display: flex;
         justify-content: space-around;
         .TailBoxChang{
-          width: 351px;
+          width: 500px;
           display: flex;
           margin-right: -600px;
           justify-content: space-between;
           .TailBoxText{
+            width: 400px;
             color: #a5a5a5;
-            margin-right: 50px;
+            margin-right: -400px;
           }
         }
         .TailBoxImg{
