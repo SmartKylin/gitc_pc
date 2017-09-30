@@ -34,13 +34,13 @@ export default class extends Component {
           <div>专项赞助</div>
         </div>*/}
         <div className="area live--official--area">
-          <div className='area--title'>视频官方直播平台</div>
+          <div className='area--title'><i/><span>视频官方直播平台</span><i/></div>
           <div className='link--group'>
             <a href={mudulink}><img src={mudushipin} alt=""/></a>
           </div>
         </div>
         <div className='area ticket--official--area'>
-          <div className='area--title'>票务官网合作平台</div>
+          <div className='area--title'><i/><span>票务官网合作平台</span> <i/></div>
           <div className='link--group'>
             <a href={baigelink}><img src={baige} alt=""/></a>
             <a href={hudonglink}><img src={hudongba} alt=""/></a>
