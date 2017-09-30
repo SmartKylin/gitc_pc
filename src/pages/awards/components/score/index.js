@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-export default class Score extends Component{
+export default class wScore extends Component{
 
     render(){
         return(
