@@ -7,7 +7,7 @@ import "jquery"
 import "swiper/dist/css/swiper.min.css"
 import "swiper/dist/js/swiper.min.js"
 import Swiper from "swiper/dist/js/swiper.js"
-// import {getImgist} from "../../services/img";
+// import {getImgList} from "../../services/img";
 
 export default class SwiperMy extends React.Component {
   constructor () {

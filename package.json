@@ -2,6 +2,7 @@
   "name": "GITC_PC",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gayechen.github.io/gitc_pc/.",
   "dependencies": {
     "autoprefixer": "7.1.1",
     "axios": "^0.16.2",
@@ -53,9 +54,12 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scriptstest.js --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -99,6 +103,7 @@
   },
   "devDependencies": {
     "antd": "^2.13.3",
+    "gh-pages": "^1.0.0",
     "swiper": "^3.4.2"
   }
 }

@@ -93,7 +93,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-wanyan" style={{fontSize: '60px'}}/>
+                  <i className="iconfont icon-wanyan"/>
                 </div>
               </div>
               <div className='english--title'>INVITATION DINNER</div>
