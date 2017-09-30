@@ -57,7 +57,7 @@ export default class CentralSection extends Component{
                      <div className="dingwei"></div>
                      <div className="dingweishang">
                          <div className="CentralSectionBoxProcess">
-                             <div className="iconfont icon-baoming CentralSectionBoxProcessA" >
+                             <div className="iconfont icon-baoming CentralSectionBoxProcessA" style={{fontSize:'45px'}} >
 
                              </div>
                              <div className="iconfont icon-baomingjiezhi CentralSectionBoxProcessA" >
