@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import './index.scss'
+import  logo from '../../../images/logo.jpg'
+import {Link} from 'react-router-dom'
 
 export default class extends Component {
   render () {
@@ -60,14 +62,20 @@ export default class extends Component {
              </div>*/}
            </div>
            <div className="external--link">
-             <div>首页</div>
-             <div>上海站</div>
+             <div><a href="http://www.thegitc.com">首页</a></div>
+             <div>
+               <a href="http://www.thegitc.com/sh.html">上海站</a>
+             </div>
              {/*<div>深圳站</div>*/}
              {/*<div>成都站</div>*/}
-             <div>北京站</div>
+             <div><a href="#"></a></div>
              <div>杭州站</div>
-             <div>加入我们</div>
-             <div>赞助合作</div>
+             <div>
+               <a href="http://www.kylinclub.org/">关于主办方</a>
+             </div>
+             <div>
+               <a href="http://www.thegitc.com/contact.html">加入我们</a>
+             </div>
            </div>
          </div>
          <div className="main--right">
@@ -84,8 +92,12 @@ export default class extends Component {
          </div>
         </div>
         <div className='dividing--line'>
-          <img src="" alt="" style={{flex: 1.55}}/>
-          <div style={{flex: 1}}>京CP备14035833号-1 &nbsp; 京公网安备11010200322</div>
+          <div style={{width: '1147px', display: 'flex', justifyContent: 'space-between'}}>
+            <div  style={{display: 'flex'}}>
+              <img src={logo} alt=""/>
+            </div>
+            <div style={{}}>京CP备14035833号-1 &nbsp; 京公网安备11010200322</div>
+          </div>
         </div>
       </div>
     )
