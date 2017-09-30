@@ -2,7 +2,6 @@
   "name": "GITC_PC",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gayechen.github.io/gitc_pc/.",
   "dependencies": {
     "autoprefixer": "7.1.1",
     "axios": "^0.16.2",
@@ -103,7 +102,6 @@
   },
   "devDependencies": {
     "antd": "^2.13.3",
-    "gh-pages": "^1.0.0",
     "swiper": "^3.4.2"
   }
 }
