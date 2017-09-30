@@ -8,6 +8,8 @@ const formItemLayout = {
     labelCol: { span: 7},
     wrapperCol: { span: 12 },
 };
+const textareaStyle = {outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc',borderRadius:'4px',textIndent:'10px'}
+
 class NormalLoginForm extends Component {
 
 
@@ -128,7 +130,7 @@ class NormalLoginForm extends Component {
                                 {getFieldDecorator('addr', {
                                     rules: [{ required: true, message: '地址不能为空!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       用于证件快递，请填写方便收件的地址" />
+                                    <textarea style={textareaStyle}  placeholder=" 用于证件快递，请填写方便收件的地址" />
                                 )}
                             </FormItem>
 
@@ -158,7 +160,7 @@ class NormalLoginForm extends Component {
                                 {getFieldDecorator('summary', {
                                     rules: [{ required: true, message: '请输入个人简介!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       200字左右即可" />
+                                    <textarea style={textareaStyle}  placeholder=" 200字左右即可" />
                                 )}
                             </FormItem>
 
@@ -173,7 +175,7 @@ class NormalLoginForm extends Component {
                                 {getFieldDecorator('speech_experience', {
 
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       您之前在行业会议、论坛、技术交流中的演讲、主持或荣誉简介" />
+                                    <textarea style={textareaStyle}  placeholder=" 您之前在行业会议、论坛、技术交流中的演讲、主持或荣誉简介" />
                                 )}
                             </FormItem>
                             <FormItem
@@ -212,7 +214,7 @@ class NormalLoginForm extends Component {
                                 {getFieldDecorator('theme', {
                                     rules: [{ required: true, message: '请输入演讲主题!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       请确保该主题未在其他公开场合分享过" />
+                                    <textarea style={textareaStyle}  placeholder=" 请确保该主题未在其他公开场合分享过" />
                                 )}
                             </FormItem>
 
@@ -224,7 +226,7 @@ class NormalLoginForm extends Component {
                                 {getFieldDecorator('content', {
                                     rules: [{ required: true, message: '请输入内容简介!' }],
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}}  placeholder="       用于演讲内容审核，200字左右即可" />
+                                    <textarea style={textareaStyle}  placeholder=" 用于演讲内容审核，200字左右即可" />
                                 )}
                             </FormItem>
 
@@ -289,7 +291,7 @@ class NormalLoginForm extends Component {
                             >
                                 {getFieldDecorator('suggest', {
                                 })(
-                                    <textarea style={{outline:'none',resize: 'none',width:'100%', height:'100px',border:'1px solid #ccc'}} />
+                                    <textarea style={textareaStyle} />
                                 )}
                             </FormItem>
                             <FormItem
