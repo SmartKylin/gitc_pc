@@ -4,7 +4,7 @@ import Nav from "../navigation/index";
 import './index.scss'
 import Login from '../login/index.js'
 
-import {Router, Route, Switch} from 'react-router-dom'
+import {Router, Route} from 'react-router-dom'
 import Home from '../../pages/home'
 import Ticket from '../../pages/ticket/index'
 import Issue from '../../pages/issue/index'

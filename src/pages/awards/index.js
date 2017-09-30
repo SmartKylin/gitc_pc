@@ -10,10 +10,6 @@ import Footer from '../../pages/home/footer'
 
 export default class Awards extends React.Component{
 
-    constructor (props) {
-        super(props)
-    }
-
     render (){
         return(
             <div className="AwardsBox">

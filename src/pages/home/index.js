@@ -20,7 +20,7 @@ export default class extends Component {
       <div style={{color: '#fff',background:'#0d1427'}}>
         <Strengths/>
         <Topics/>
-        {/*<Agenda/>*/}
+        <Agenda/>
         <Presidium/>
         <Expert/>
         <SpeechGuest/>
