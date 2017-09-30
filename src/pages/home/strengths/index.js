@@ -11,7 +11,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-shangjia1"/>
+                  <i className="iconfont icon-pinpaizhuanchang"/>
                 </div>
               </div>
               <div className='english--title'>RESTAURANT EVOLUTI</div>
@@ -27,7 +27,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-duihua1"/>
+                  <i className="iconfont icon-techtutor"/>
                 </div>
               </div>
               <div className='english--title'>TECH TUTOR</div>
@@ -43,7 +43,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-munters_chuangxin"/>
+                  <i className="iconfont icon-teach"/>
                 </div>
               </div>
               <div className='english--title'>TECH+</div>
@@ -59,7 +59,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-jiangbei1"/>
+                  <i className="iconfont icon-banjiangdianli"/>
                 </div>
               </div>
               <div className='english--title'>AWARDING CEREMONY</div>
@@ -77,7 +77,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-heikeji"/>
+                  <i className="iconfont icon-heikejiyouleyuan"/>
                 </div>
               </div>
               <div className='english--title'>BLACK TECH AMUSEMENT</div>
@@ -93,7 +93,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-huangguan" style={{fontSize: '60px'}}/>
+                  <i className="iconfont icon-wanyan" style={{fontSize: '60px'}}/>
                 </div>
               </div>
               <div className='english--title'>INVITATION DINNER</div>
