@@ -41,6 +41,9 @@ export default (config => {
   // 获取个人收藏嘉宾列表
   'getGuestList': '/api/gitc/collect/',
   
+  // 获取图片类接口
+  'getImgList': '/api/gitc/img-'
+  
 })
 
 // 人员列表

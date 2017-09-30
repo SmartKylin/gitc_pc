@@ -7,15 +7,26 @@ import "jquery"
 import "swiper/dist/css/swiper.min.css"
 import "swiper/dist/js/swiper.min.js"
 import Swiper from "swiper/dist/js/swiper.js"
+import {getImgist} from "../../services/img";
 
 export default class SwiperMy extends React.Component {
   constructor () {
     super()
     this.state = {
-      btnSwitchVisible: false
+      btnSwitchVisible: false,
+      imgAry: []
     }
   }
   
+ /* componentWillMount () {
+    getImgist(51)
+    .then(res => res && res.json())
+    .then(data => {
+      this.setState({
+        imgAry: data && data.data
+      })
+    })
+  }*/
   render() {
     return (
     <div
@@ -34,6 +45,14 @@ export default class SwiperMy extends React.Component {
         <div className="swiper-slide">
           <img src={img3} alt=""/>
         </div>
+       {/* {
+          this.state.imgAry.length && this.state.imgAry.map((item, index) => (
+            <div className="swiper-slide">
+              <img src={item.img}/>
+            </div>
+          ))
+        }*/}
+        
       </div>
       
       {/*<div className="swiper-pagination" ref="pagination"></div>*/}
@@ -50,7 +69,7 @@ export default class SwiperMy extends React.Component {
     new Swiper(this.refs.container, {
       loop: true,
       // effect: 'coverflow',
-      // autoplay: 3000,
+      autoplay: 3000,
       grabCursor: true,
       speed: 1000,
       autoplayDisableOnInteraction: false,
