@@ -44,7 +44,7 @@ export default class extends Component {
                 null
               }
           >
-           <img className="small--avatar" src={data.pic || defaultAvatar}/>
+           <img className="small--avatar" src={data.pic|| defaultAvatar}/>
            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
              <div style={{marginTop: '44px', fontSize: '16px'}}>{data.name}</div>
              <div style={{fontSize: '12px', marginTop: '8px'}}>{data.company} {data.position}</div>
