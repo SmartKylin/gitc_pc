@@ -17,7 +17,7 @@ export default class Awards extends React.Component{
     render (){
         return(
             <div className="AwardsBox">
-                <Nav/>
+                <Nav history={this.props.history}/>
                 <First/>
                 <div className="AwardsLaout">
                     <Event/>

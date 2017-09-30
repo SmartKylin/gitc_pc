@@ -69,7 +69,7 @@ export default class SwiperMy extends React.Component {
     new Swiper(this.refs.container, {
       loop: true,
       // effect: 'coverflow',
-      autoplay: 3000,
+      // autoplay: 3000,
       grabCursor: true,
       speed: 1000,
       autoplayDisableOnInteraction: false,

@@ -41,7 +41,7 @@ export default class Layout extends React.Component {
         })
     }
     render() {
-        return (
+      return (
             <Router history={this.props.history}>
                 <div>
                     <div className="layoutBox">
