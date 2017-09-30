@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.scss"
 import logo from "../../images/logo/logo.png"
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 
 export default class Nav extends React.Component {
@@ -79,12 +79,9 @@ export default class Nav extends React.Component {
           >我的门票
           </div>*/}
           </div>
-        
         </div>
       </div>
-    
     </div>
-    
     )
   }
 }

@@ -6,7 +6,6 @@ export default class First extends Component{
         return(
             <div className="FirstBox">
                 <div className="FirstBanner">
-
                 </div>
             </div>
 
