@@ -75,7 +75,7 @@ export default class Nav extends React.Component {
             <div className="NavButton">
               <div className="NavBtn"><a href="https://www.bagevent.com/event/768490">立即购买</a></div>
       
-              {/* <div className="NavBtn"
+               {/*<div className="NavBtn"
                onClick={this.handeClick.bind(this)}
                style={this.state.whichPath === '/layout/ticket' ? {color: '#023fd6'} : null}
           >我的门票

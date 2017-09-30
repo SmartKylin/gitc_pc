@@ -42,7 +42,7 @@ export default class Login extends Component {
       .then(data => {
         message.info(data.msg)
         this.setState({
-          mobile: data.mobile
+          mobile: this.mobile.value
         })
       })
   }
