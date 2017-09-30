@@ -26,6 +26,9 @@
             display: flex;
             justify-content: space-between;
             width: 490px;
+            > div {
+              cursor: pointer;
+            }
           }
         }
         a{
@@ -33,9 +36,6 @@
           text-decoration:none;
           cursor: pointer;
           padding: 0 4px;
-          /* &:hover {
-            color: #023fd6 ;
-          }*/
         }
       }
       .NavButton{
