@@ -22,11 +22,17 @@ export default class extends Component {
     }
   }*/
   render () {
-    let {data, speech} = this.props
+    let {data, speech} = this.props;
     return (
      <div className={'pic--guest--item'}>
        <div className={'guest--avatar--area'} >
-         <img
+         <div className={'guest--avatar'} style={{background:`url(${data.pic || defaultAvatar})`,backgroundSize:"cover"}} onMouseEnter={
+           this.props.canPop ?
+           () => {this.setState({guestBoxVisible: true})}
+           :
+           null
+         }></div>
+         {/* <img
          src={data.pic || defaultAvatar}
          className={'guest--avatar'}
          onMouseEnter={
@@ -34,7 +40,7 @@ export default class extends Component {
            () => {this.setState({guestBoxVisible: true})}
            :
            null
-         }/>
+         }/> */}
          <div className="guest--detail--box"
               style={{visibility: this.state.guestBoxVisible ? 'visible' : 'hidden'}}
               onMouseLeave={

@@ -33,7 +33,7 @@ export default class extends Component {
               <div className='english--title'>TECH TUTOR</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>Tech Tutor</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
-                掌握最强最先进的技术的
+                掌握最强最先进技术
               </div>
               <div style={{fontSize: '12px'}}>
                 神秘大触
@@ -65,10 +65,10 @@ export default class extends Component {
               <div className='english--title'>AWARDING CEREMONY</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>颁奖典礼</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
-                揭示新一代的 技术扛旗者
+                揭晓新一代的技术扛旗者
               </div>
               <div style={{fontSize: '12px'}}>
-                行业中榜样的力量
+                见证行业中榜样的力量
               </div>
             </div>
            
