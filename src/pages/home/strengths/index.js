@@ -11,7 +11,7 @@ export default class extends Component {
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
-                  <i className="iconfont icon-pinpaizhuanchang"/>
+                  <i className="iconfont icon-pinpai"/>
                 </div>
               </div>
               <div className='english--title'>RESTAURANT EVOLUTI</div>
@@ -102,7 +102,7 @@ export default class extends Component {
                 塑造互联网社交重头戏，真人王者荣耀
               </div>
               <div style={{fontSize: '12px'}}>
-                你最想认识的他在游戏里
+                你最想认识他在游戏里
               </div>
             </div>
           </div>
