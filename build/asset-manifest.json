@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "main.js": "static/js/main.c6a8fd9b.js",
   "main.js.map": "static/js/main.c6a8fd9b.js.map",
   "static\\media\\banner_01.png": "static/media/banner_01.b4e05dd5.png",
@@ -6,4 +7,13 @@
   "static\\media\\动效.gif": "static/media/动效.a51314ee.gif",
   "static\\media\\报名页面banner_01.png": "static/media/报名页面banner_01.7da36c09.png",
   "static\\media\\赞助商.jpg": "static/media/赞助商.0ce8a198.jpg"
+=======
+  "main.js": "static/js/main.067db6b8.js",
+  "main.js.map": "static/js/main.067db6b8.js.map",
+  "static/media/banner_01.png": "static/media/banner_01.b4e05dd5.png",
+  "static/media/biaoti.png": "static/media/biaoti.84aa0bff.png",
+  "static/media/动效.gif": "static/media/动效.a51314ee.gif",
+  "static/media/报名页面banner_01.png": "static/media/报名页面banner_01.7da36c09.png",
+  "static/media/赞助商.jpg": "static/media/赞助商.0ce8a198.jpg"
+>>>>>>> a0498d41618b2aa31b908ffffb74487e19b4e07c
 }
