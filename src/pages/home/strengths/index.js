@@ -33,7 +33,7 @@ export default class extends Component {
               <div className='english--title'>TECH TUTOR</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>Tech Tutor</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
-                掌握最强最先进技术
+                掌握最强最先进技术的
               </div>
               <div style={{fontSize: '12px'}}>
                 神秘大触
@@ -52,7 +52,7 @@ export default class extends Component {
                 让技术带你感受游戏的魅力
               </div>
               <div style={{fontSize: '12px'}}>
-                遨游最真实的表演
+                遨游最真实的技术梦境
               </div>
             </div>
   
@@ -102,7 +102,7 @@ export default class extends Component {
                 塑造互联网社交重头戏，真人王者荣耀
               </div>
               <div style={{fontSize: '12px'}}>
-                你最想认识的人他在游戏里
+                你最想认识的他在游戏里
               </div>
             </div>
           </div>
