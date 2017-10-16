@@ -77,7 +77,7 @@ export default class CentralSection extends Component{
                          <div className="CentralSectionBoxDate">
                              <div className="CentralSectionBoxDateA">
                                  <div className="yuzhong">
-                                     <div>10月初-20日</div>
+                                     <div>10月初-30日</div>
                                      <div>启动&报名</div>
                                  </div>
                              </div>
@@ -95,7 +95,7 @@ export default class CentralSection extends Component{
                              </div>
                              <div className="CentralSectionBoxDateA">
                                  <div className="yuzhong BB">
-                                     <div>11月10日-11月20日</div>
+                                     <div>11月10日-11月15日</div>
                                      <div>投票与评选</div>
                                  </div>
                              </div>
