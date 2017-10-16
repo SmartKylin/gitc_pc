@@ -60,9 +60,9 @@ export default class CentralSection extends Component{
                              <div className="iconfont icon-baoming CentralSectionBoxProcessA" style={{fontSize:'45px'}} >
 
                              </div>
-                             <div className="iconfont icon-baomingjiezhi CentralSectionBoxProcessA" >
+                             {/* <div className="iconfont icon-baomingjiezhi CentralSectionBoxProcessA" >
 
-                             </div>
+                             </div> */}
                              <div className="iconfont icon-shujucaiji CentralSectionBoxProcessA" >
 
                              </div>
@@ -81,16 +81,16 @@ export default class CentralSection extends Component{
                                      <div>启动&报名</div>
                                  </div>
                              </div>
-                             <div className="CentralSectionBoxDateA">
+                             {/* <div className="CentralSectionBoxDateA">
                                  <div className="yuzhong AA">
                                      <div>10月30日</div>
                                      <div>报截止名</div>
                                  </div>
-                             </div>
+                             </div> */}
                              <div className="CentralSectionBoxDateA">
                                  <div className="yuzhong">
-                                     <div>11月1日-11月10日</div>
-                                     <div>数据采集与评审</div>
+                                     <div>    11月1日-11月10日</div>
+                                     <div>   数据采集与评审</div>
                                  </div>
                              </div>
                              <div className="CentralSectionBoxDateA">
