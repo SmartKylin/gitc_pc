@@ -2,6 +2,18 @@ import React, {Component} from 'react'
 import './index.scss'
 import defaultAvatar from '../../../images/default-avatar.png'
 
+const detailGetLeft = (pos) => {
+  let ref = -221;
+  let offset = 150;
+  switch (pos) {
+    case 'left':
+      return ref + offset;
+    case 'right':
+      return ref - offset;
+    default:
+      return ref;
+  }
+}
 export default class extends Component {
   constructor (props) {
     super(props);
@@ -21,17 +33,21 @@ export default class extends Component {
       })
     }
   }*/
+  
   render () {
     let {data, speech} = this.props;
     return (
      <div className={'pic--guest--item'}>
        <div className={'guest--avatar--area'} >
-         <div className={'guest--avatar'} style={{background:`url(${data.pic || defaultAvatar})`,backgroundSize:"cover"}} onMouseEnter={
-           this.props.canPop ?
-           () => {this.setState({guestBoxVisible: true})}
-           :
-           null
-         }></div>
+         <div
+          className={'guest--avatar'}
+          style={{background:`url(${data.pic || defaultAvatar})`,backgroundSize:"cover"}}
+          onMouseEnter={
+            this.props.canPop
+            ? () => {this.setState({guestBoxVisible: true})}
+            : null
+          }
+         />
          {/* <img
          src={data.pic || defaultAvatar}
          className={'guest--avatar'}
@@ -42,7 +58,10 @@ export default class extends Component {
            null
          }/> */}
          <div className="guest--detail--box"
-              style={{visibility: this.state.guestBoxVisible ? 'visible' : 'hidden'}}
+              style={{
+                visibility: this.state.guestBoxVisible ? 'visible' : 'hidden',
+                left: detailGetLeft(this.props.pos)
+              }}
               onMouseLeave={
                 this.props.canPop ?
                 () => this.setState({ guestBoxVisible: false})

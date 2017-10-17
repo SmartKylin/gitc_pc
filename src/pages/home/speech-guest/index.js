@@ -4,6 +4,16 @@ import './index.scss'
 import $ from 'jquery'
 import {getPeopleList} from "../../../services/home";
 
+const getPosByInd = ind => {
+  switch (ind % 5 ) {
+    case 0:
+      return 'left';
+    case 4:
+      return 'right';
+    default:
+      return 'normal';
+  }
+}
 export default class extends Component {
   constructor (props) {
     super(props)
@@ -42,7 +52,7 @@ export default class extends Component {
         <div className='speech--body'>
           {
             this.state.data.length && this.state.data.slice(0, 15).map((item, index) => (
-              <GuestItem key={index} speech={true} data={item} canPop={true}/>
+              <GuestItem key={index} speech={true} data={item} canPop={true} pos={getPosByInd(index)}/>
             ))
           }
         </div>
@@ -52,7 +62,7 @@ export default class extends Component {
           <div className='speech--more'>
             {
               this.state.data.length && this.state.data.slice(15).map((item, index) => (
-              <GuestItem key={index} speech={true} data={item} canPop={true}/>
+              <GuestItem key={index} speech={true} data={item} canPop={true} pos={getPosByInd(index)}/>
               ))
             }
           </div> : null
