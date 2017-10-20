@@ -15,7 +15,9 @@ export default class extends Component {
     return (
       <div className='cooperation--partner'>
         <div className="partner--title">合作伙伴</div>
-        {/*<div className="super--sponsor--area">
+        <div className="partner--content" />
+        
+        {/* <div className="super--sponsor--area">
           <div>顶级赞助</div>
         </div>
         <div className="area diamon--area">
@@ -32,7 +34,9 @@ export default class extends Component {
         </div>
         <div className="area special--area">
           <div>专项赞助</div>
-        </div>*/}
+        </div>
+        
+        
         <div className="area live--official--area">
           <div className='area--title'><i/><span>视频官方直播平台</span><i/></div>
           <div className='link--group'>
@@ -46,13 +50,16 @@ export default class extends Component {
             <a href={hudonglink}><img src={hudongba} alt=""/></a>
           </div>
         </div>
-       {/* <div className='area ticket--area'>
+        
+        
+       <div className='area ticket--area'>
           <div>票务官网合作平台</div>
         </div>
        
         <div className="area live--area">
           <div>视频直播平台</div>
-        </div>*/}
+        </div> */}
+        
       </div>
     )
   }
