@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../images/lunbotu/banner_01.png"
-import img2 from "../../images/lunbotu/banner_01.png"
+import img4 from "../../images/lunbotu/banner_04.jpg"
 import img3 from "../../images/lunbotu/banner_01.png"
 import "./index.scss"
 import "jquery"
@@ -40,10 +40,7 @@ export default class SwiperMy extends React.Component {
           <img src={img1} alt=""/>
         </div>
         <div className="swiper-slide">
-          <img src={img2} alt=""/>
-        </div>
-        <div className="swiper-slide">
-          <img src={img3} alt=""/>
+          <img src={img4} alt=""/>
         </div>
        {/* {
           this.state.imgAry.length && this.state.imgAry.map((item, index) => (
@@ -69,7 +66,7 @@ export default class SwiperMy extends React.Component {
     new Swiper(this.refs.container, {
       loop: true,
       // effect: 'coverflow',
-      // autoplay: 3000,
+      autoplay: 3000,
       grabCursor: true,
       speed: 1000,
       autoplayDisableOnInteraction: false,
