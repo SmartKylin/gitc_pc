@@ -42,6 +42,7 @@ export default class SwiperMy extends React.Component {
         <div className="swiper-slide">
           <img src={img4} alt=""/>
         </div> 
+        
        {/* {
           this.state.imgAry.length && this.state.imgAry.map((item, index) => (
             <div className="swiper-slide">
