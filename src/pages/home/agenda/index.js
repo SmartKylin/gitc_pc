@@ -108,7 +108,7 @@ export default class extends Component {
     .then(data => {
       topicGroup[0] = decorateAry(data.data)
     })
-  
+
     await getDate2()
     .then(res => res && res.json())
     .then(data => {

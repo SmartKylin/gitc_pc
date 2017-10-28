@@ -16,6 +16,7 @@ export default class extends Component {
             <i className="iconfont icon-positioning"/>
             <span>{data.other}</span>
           </div>
+          
           <div className='open--ceremony'>
             <span style={{marginRight: '10px'}}>9:30-10:00</span>
             <span>开幕式致辞直播</span>
@@ -23,20 +24,20 @@ export default class extends Component {
         </div>
         <div className='guest--list'>
           {
-            [0, 1, 2, 3, 4, 5, 6, 7].map((item, index) => (
+            data.data && data.data.map((item, index) => (
               <div className='guest--item' key={index}>
               <div className="item--left">
-                <img src={defaultAvatar} alt=""/>
-               {/*  <div className='item--document'>
+                <img src={item.pic || defaultAvatar} alt=""/>
+               {/*  <a className='item--document' href={item.files_url}>
                   <i className="iconfont icon-chakanwendangjilu"/>
                   文档
-                </div> */}
+                </a> */}
               </div>
               <div className="item--right">
-                {/* <div className='meeting--time'>9:00-9:45</div> */}
-                <div className="meeting--theme">如何打造一个高效智能</div>
-                <div className="guest--name">崔保秋</div>
-                <div className='guest--info'>小米| 首席架构师 & 天使投资人</div>
+                {/* <div className='meeting--time'>{item.stime}</div> */}
+                <div className="meeting--theme">{item.stheme}</div>
+                <div className="guest--name">{item.name}</div>
+                <div className='guest--info'>{item.company} | {item.position}</div>
               </div>
             </div>
             ))
