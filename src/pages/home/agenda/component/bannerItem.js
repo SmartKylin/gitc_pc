@@ -27,13 +27,13 @@ export default class extends Component {
               <div className='guest--item' key={index}>
               <div className="item--left">
                 <img src={defaultAvatar} alt=""/>
-                <div className='item--document'>
+               {/*  <div className='item--document'>
                   <i className="iconfont icon-chakanwendangjilu"/>
                   文档
-                </div>
+                </div> */}
               </div>
               <div className="item--right">
-                <div className='meeting--time'>9:00-9:45</div>
+                {/* <div className='meeting--time'>9:00-9:45</div> */}
                 <div className="meeting--theme">如何打造一个高效智能</div>
                 <div className="guest--name">崔保秋</div>
                 <div className='guest--info'>小米| 首席架构师 & 天使投资人</div>

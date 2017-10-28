@@ -7,7 +7,7 @@ import "jquery"
 import "swiper/dist/css/swiper.min.css"
 import "swiper/dist/js/swiper.min.js"
 import Swiper from "swiper/dist/js/swiper.js"
-// import {getImgList} from "../../services/img";
+import {getImgList} from "../../services/img";
 
 export default class SwiperMy extends React.Component {
   constructor () {
@@ -18,15 +18,15 @@ export default class SwiperMy extends React.Component {
     }
   }
   
- /* componentWillMount () {
-    getImgist(51)
+ componentWillMount () {
+    getImgList(51)
     .then(res => res && res.json())
     .then(data => {
       this.setState({
         imgAry: data && data.data
       })
     })
-  }*/
+  }
   render() {
     return (
     <div
@@ -41,22 +41,21 @@ export default class SwiperMy extends React.Component {
         </div>
         <div className="swiper-slide">
           <img src={img4} alt=""/>
-        </div>
+        </div> 
        {/* {
           this.state.imgAry.length && this.state.imgAry.map((item, index) => (
             <div className="swiper-slide">
               <img src={item.img}/>
             </div>
           ))
-        }*/}
+        } */}
         
       </div>
       
-      {/*<div className="swiper-pagination" ref="pagination"></div>*/}
+      <div className="swiper-pagination" ref="pagination"></div>
       
      {/* <div className="swiper-button-prev swiper-button-blue" ref="prev"></div>
       <div className="swiper-button-next swiper-button-blue" ref="next"></div>*/}
-      
     </div>
     )
   }
@@ -70,7 +69,8 @@ export default class SwiperMy extends React.Component {
       grabCursor: true,
       speed: 1000,
       autoplayDisableOnInteraction: false,
-      // paginationType: 'fraction',
+      paginationType: 'bullets',
+      pagination: this.refs.pagination,
       prevButton: this.refs.prev,
       nextButton: this.refs.next,
       observe: true
