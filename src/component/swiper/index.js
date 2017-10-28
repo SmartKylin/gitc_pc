@@ -7,7 +7,8 @@ import "jquery"
 import "swiper/dist/css/swiper.min.css"
 import "swiper/dist/js/swiper.min.js"
 import Swiper from "swiper/dist/js/swiper.js"
-import {getImgList} from "../../services/img";
+import {Link} from 'react-router-dom'
+// import {getImgList} from "../../services/img";
 
 export default class SwiperMy extends React.Component {
   constructor () {
@@ -18,7 +19,7 @@ export default class SwiperMy extends React.Component {
     }
   }
   
- componentWillMount () {
+ /* componentWillMount () {
     getImgList(51)
     .then(res => res && res.json())
     .then(data => {
@@ -26,7 +27,7 @@ export default class SwiperMy extends React.Component {
         imgAry: data && data.data
       })
     })
-  }
+  } */
   render() {
     return (
     <div
@@ -40,9 +41,8 @@ export default class SwiperMy extends React.Component {
           <img src={img1} alt=""/>
         </div>
         <div className="swiper-slide">
-          <img src={img4} alt=""/>
-        </div> 
-        
+          <Link to='/awards' ><img src={img4} alt=""/></Link>
+        </div>
        {/* {
           this.state.imgAry.length && this.state.imgAry.map((item, index) => (
             <div className="swiper-slide">
