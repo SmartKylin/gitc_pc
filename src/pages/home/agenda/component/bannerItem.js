@@ -19,7 +19,7 @@ export default class extends Component {
           
           <div className='open--ceremony'>
             <span style={{marginRight: '10px'}}>9:30-10:00</span>
-            <span>开幕式致辞直播</span>
+            <span>开幕式直播</span>
           </div>
         </div>
         <div className='guest--list'>
