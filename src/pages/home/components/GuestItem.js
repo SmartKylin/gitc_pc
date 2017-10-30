@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './index.scss'
-import defaultAvatar from '../../../images/default-avatar.png'
+import defaultAvatar from '../../../images/default-avatar.jpg'
 
 const detailGetLeft = (pos) => {
   let ref = -221;

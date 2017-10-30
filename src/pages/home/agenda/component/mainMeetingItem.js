@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import defaultAvatar from '../../../../images/default-avatar.png'
+import defaultAvatar from '../../../../images/default-avatar.jpg'
 import './index.scss'
 
 export default class extends Component {
