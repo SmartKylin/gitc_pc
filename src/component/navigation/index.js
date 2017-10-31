@@ -53,17 +53,17 @@ export default class Nav extends React.Component {
               <a href="http://www.thegitc.com/index.html">首页</a>
               <div
                 onClick={() => this.handleClickLink('/layout/home')}
-                style={(pathname === '/layout/home' || pathname === '/' )? {color: '#023fd6'} : null}
+                style={(pathname === '/layout/home' || pathname === '/' )? {color: '#fadb93'} : null}
               >GITC北京站</div>
               
               <div
                 onClick={() => this.handleClickLink('/awards')}
-                style={pathname === '/awards' ? {color: '#023fd6'} : null}
+                style={pathname === '/awards' ? {color: '#fadb93'} : null}
               >奖项评选报名</div>
               
               <div
                     onClick={() => this.handleClickLink('/layout/issue')}
-                    style={pathname === '/layout/issue' ? {color: '#023fd6'} : null}
+                    style={pathname === '/layout/issue' ? {color: '#fadb93'} : null}
               >议题提交</div>
               
               <a href="http://www.kylinclub.org/">关于主办方</a>
