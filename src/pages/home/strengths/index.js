@@ -99,10 +99,10 @@ export default class extends Component {
               <div className='english--title'>INVITATION DINNER</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>邀请晚宴</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
-                数百名业内大咖汇聚一堂，领悟社
+                数百名业内大咖汇聚一堂，领悟社交
               </div>
               <div style={{fontSize: '12px'}}>
-                交魅力，推动互联网技术领域分享与合作。
+                魅力，推动互联网技术领域分享与合作。
               </div>
             </div>
           </div>
