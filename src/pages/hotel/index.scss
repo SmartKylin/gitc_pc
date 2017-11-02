@@ -1,0 +1,103 @@
+.Hotel-Box{
+  width: 100%;
+  height: 100%;
+  padding-top: 143px;
+  background: #0d1427;
+  .Hotel-Inner{
+    width: 1166px;
+    height: 715px;
+    margin: 0px auto;
+    margin-bottom: 143px;
+    .Hotel-First{
+      display: flex;
+      width: 100%;
+      height: 197px;
+      justify-content: space-between;
+      .Hotel-First-One{
+        width: 576px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        .Hotel-First-One-Img{
+          border-radius: 5px;
+          width: 191px;
+          height: 198px;
+        }
+        .Hotel-First-One-Text-Box{
+          padding: 16px 0 0 22px;
+          width: 377px;
+          height: 100%;
+          background: #172643;
+          border-radius: 5px;
+        }
+
+      }
+      .Hotel-First-Two{
+        width: 576px;
+        display: flex;
+        justify-content: space-between;
+        .Hotel-First-Two-Img{
+          width: 191px;
+          height: 198px;
+        }
+        .Hotel-First-Two-Text-Box{
+          padding: 16px 0 0 22px;
+          width: 377px;
+          height: 100%;
+          border-radius: 5px;
+          background: #172643;
+        }
+      }
+    }
+    .Hotel-First-Second{
+      display: flex;
+      width: 100%;
+      height: 197px;
+      justify-content: space-between;
+      margin-top: 30px;
+      .Hotel-First-Second-One{
+        width: 576px;
+        display: flex;
+        justify-content: space-between;
+        .Hotel-First-Second-One-Img{
+          width: 191px;
+          height: 198px;
+          border-radius: 5px;
+        }
+        .Hotel-First-Second-One-Text-Box{
+          padding: 16px 0 0 22px;
+          width: 377px;
+          height: 100%;
+          border-radius: 5px;
+          background: #172643;
+        }
+      }
+      .Hotel-First-Second-Two{
+        width: 576px;
+        display: flex;
+        justify-content: space-between;
+        .Hotel-First-Second-Two-Img{
+          width: 191px;
+          height: 198px;
+          border-radius: 5px;
+        }
+        .Hotel-First-Second-Two-Text-Box{
+          padding: 16px 0 0 22px;
+          width: 377px;
+          height: 100%;
+          border-radius: 5px;
+          background: #172643;
+        }
+      }
+    }
+    .Hotel-Edge{
+      padding-top: 50px;
+      width: 100%;
+      height: 197px;
+      margin-top: 50px;
+      background: #172643;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
