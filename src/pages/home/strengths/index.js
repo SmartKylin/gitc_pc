@@ -14,7 +14,7 @@ export default class extends Component {
                   <i className="iconfont icon-pinpai"/>
                 </div>
               </div>
-              <div className='english--title'>RESTAURANT EVOLUTI</div>
+              <div className='english--title'>BRANDING TRACk</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>品牌专场</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
                 重新定义品牌价值
@@ -99,10 +99,10 @@ export default class extends Component {
               <div className='english--title'>INVITATION DINNER</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>邀请晚宴</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
-                塑造互联网社交重头戏，真人王者荣耀
+                数百名业内大咖汇聚一堂，领悟社
               </div>
               <div style={{fontSize: '12px'}}>
-                你最想认识他在游戏里
+                交魅力，推动互联网技术领域分享与合作。
               </div>
             </div>
           </div>
