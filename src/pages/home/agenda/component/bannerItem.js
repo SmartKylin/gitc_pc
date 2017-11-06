@@ -8,7 +8,8 @@ export default class extends Component {
   }
   render () {
     let {data} = this.props
-    return (
+      console.log(data,"data");
+      return (
       <div className='banner--item'>
         <div className="fixed--info">
           <div className='meeting--name'>{data.name}</div>
@@ -16,11 +17,13 @@ export default class extends Component {
             <i className="iconfont icon-positioning"/>
             <span>{data.other}</span>
           </div>
-          
-          <div className='open--ceremony'>
-            <span style={{marginRight: '10px'}}>9:30-10:00</span>
-            <span>开幕式直播</span>
-          </div>
+            {
+              data && data.data.length>0 && data.data[0].sdata == '2017-11-23'?
+              <div className='open--ceremony'>
+                <span style={{marginRight: '10px'}}>9:30-10:00</span>
+                <span>开幕式直播</span>
+              </div>:""
+            }
         </div>
         <div className='guest--list'>
           {
