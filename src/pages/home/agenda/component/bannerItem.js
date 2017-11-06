@@ -34,7 +34,7 @@ export default class extends Component {
                 </a> */}
               </div>
               <div className="item--right">
-                {/* <div className='meeting--time'>{item.stime}</div> */}
+                <div className='meeting--time'>{item.stime}</div>
                 <div className="meeting--theme">{item.stheme}</div>
                 <div className="guest--name">{item.name}</div>
                 <div className='guest--info'>{item.company} | {item.position}</div>
