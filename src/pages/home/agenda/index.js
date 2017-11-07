@@ -171,7 +171,7 @@ export default class extends Component {
                     ((this.state.whichDay === 0) && (item.name === '主会场')) ?
                     <MainMeeting data={item}/>
                     :
-                    <BannerItem data={item}/>
+                    <BannerItem whichDay={this.state.whichDay} data={item}/>
                   }
                   </li>
                 ))

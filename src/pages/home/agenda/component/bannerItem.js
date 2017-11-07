@@ -18,9 +18,9 @@ export default class extends Component {
             <span>{data.other}</span>
           </div>
             {
-              data && data.data.length>0 && data.data[0].sdata == '2017-11-23'?
+                this.props.whichDay ==0 ?
               <div className='open--ceremony'>
-                <span style={{marginRight: '10px'}}>9:30-10:00</span>
+                <span style={{marginRight: '10px'}}>9:00-10:00</span>
                 <span>开幕式直播</span>
               </div>:""
             }
