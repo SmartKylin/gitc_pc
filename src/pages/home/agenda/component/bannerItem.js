@@ -19,9 +19,13 @@ export default class extends Component {
           </div>
             {
                 this.props.whichDay ==0 ?
-              <div className='open--ceremony'>
-                <span style={{marginRight: '10px'}}>9:00-10:00</span>
+              <div className={data.name =="基础架构专场" ? 'open--ceremonyA':'open--ceremony'}>
+                <span style={{marginRight: '10px'}}>09:00-10:00</span>
                 <span>开幕式直播</span>
+                  {
+                      data.name =="基础架构专场" ? <div>10:00-10:10 &nbsp;&nbsp;开场致辞--思科</div>:''
+                  }
+
               </div>:""
             }
         </div>
