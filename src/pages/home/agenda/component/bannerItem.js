@@ -8,7 +8,6 @@ export default class extends Component {
   }
   render () {
     let {data} = this.props
-      console.log(data,"data");
       return (
       <div className='banner--item'>
         <div className="fixed--info">

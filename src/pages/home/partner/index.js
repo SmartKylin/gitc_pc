@@ -16,7 +16,6 @@ export default class extends Component {
       <div className='cooperation--partner'>
         <div className="partner--title">合作伙伴</div>
         <div className="partner--content" />
-        <div className="partner--contentA" />
         
         {/* <div className="super--sponsor--area">
           <div>顶级赞助</div>
