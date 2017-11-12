@@ -8,7 +8,7 @@ export default class extends Component {
   }
   render () {
     let {data} = this.props
-    return (
+      return (
       <div className='banner--item'>
         <div className="fixed--info">
           <div className='meeting--name'>{data.name}</div>
@@ -16,11 +16,17 @@ export default class extends Component {
             <i className="iconfont icon-positioning"/>
             <span>{data.other}</span>
           </div>
-          
-          <div className='open--ceremony'>
-            <span style={{marginRight: '10px'}}>9:30-10:00</span>
-            <span>开幕式直播</span>
-          </div>
+            {
+                this.props.whichDay ==0 ?
+              <div className={data.name =="基础架构专场" ? 'open--ceremonyA':'open--ceremony'}>
+                <span style={{marginRight: '10px'}}>09:00-10:00</span>
+                <span>开幕式直播</span>
+                  {
+                      data.name =="基础架构专场" ? <div>10:00-10:10 &nbsp;&nbsp;开场致辞--思科</div>:''
+                  }
+
+              </div>:""
+            }
         </div>
         <div className='guest--list'>
           {
@@ -34,7 +40,7 @@ export default class extends Component {
                 </a> */}
               </div>
               <div className="item--right">
-                {/* <div className='meeting--time'>{item.stime}</div> */}
+                <div className='meeting--time'>{item.stime}</div>
                 <div className="meeting--theme">{item.stheme}</div>
                 <div className="guest--name">{item.name}</div>
                 <div className='guest--info'>{item.company} | {item.position}</div>

@@ -16,10 +16,10 @@ export default class extends Component {
           <i className="iconfont icon-positioning"/>
           <span>{data.other}</span>
         </div>
-       {/*  <div className='open--ceremony'>
+      {/*   <div className='open--ceremony'>
           <span style={{marginRight: '10px'}}>9:30-10:00</span>
           <span>开幕式致辞直播</span>
-        </div> */}
+        </div>*/}
       </div>
       <div className='guest--list'>
         {
@@ -33,7 +33,7 @@ export default class extends Component {
               </a> */}
             </div>
             <div className="item--right">
-              {/* <div className='meeting--time'>{item.stime}</div> */}
+               <div className='meeting--time'>{item.stime}</div>
               <div className="meeting--theme">{item.stheme}</div>
               <div className="guest--name">{item.name}</div>
               <div className='guest--info'>{item.company} | {item.position}</div>

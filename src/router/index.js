@@ -4,6 +4,7 @@ import {Router, Route, Switch} from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory'
 
 import Awards from '../pages/awards/index'
+import Hotel from '../pages/hotel/index'
 import Layout from '../component/layout'
 
 
@@ -18,6 +19,7 @@ export default class RouterMap extends Component {
 
               <Route path='/layout' component={Layout}/>
               <Route  path="/awards" component={Awards}/>
+              <Route  path="/hotel" component={Hotel}/>
           </Switch>
 
       </Router>

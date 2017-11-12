@@ -8,13 +8,14 @@ export default class extends Component {
         <div className='strengths--title'>大会亮点</div>
         <div className='strengths--body'>
           <div className='body--row'>
+
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
                   <i className="iconfont icon-pinpai"/>
                 </div>
               </div>
-              <div className='english--title'>RESTAURANT EVOLUTI</div>
+              <div className='english--title'>BRANDING TRACk</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>品牌专场</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
                 重新定义品牌价值
@@ -24,7 +25,7 @@ export default class extends Component {
               </div>
             </div>
   
-            <div className='strength--item'>
+   {/*         <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
                   <i className="iconfont icon-techtutor"/>
@@ -38,9 +39,9 @@ export default class extends Component {
               <div style={{fontSize: '12px'}}>
                 神秘大触
               </div>
-            </div>
+            </div>*/}
   
-            <div className='strength--item'>
+ {/*           <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
                   <i className="iconfont icon-teach"/>
@@ -54,7 +55,7 @@ export default class extends Component {
               <div style={{fontSize: '12px'}}>
                 遨游最真实的技术梦境
               </div>
-            </div>
+            </div>*/}
   
             <div className='strength--item'>
               <div className='item--img--wrap'>
@@ -71,9 +72,7 @@ export default class extends Component {
                 见证行业中榜样的力量
               </div>
             </div>
-           
-          </div>
-          <div className='body--row'>
+
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
@@ -85,11 +84,11 @@ export default class extends Component {
               <div style={{fontSize: '12px', marginTop: '14px'}}>
                 未来世界跨维度体验
               </div>
-              {/*<div style={{fontSize: '12px'}}>
-                超一流的分享盛会
-              </div>*/}
+                {/*<div style={{fontSize: '12px'}}>
+                 超一流的分享盛会
+                 </div>*/}
             </div>
-    
+
             <div className='strength--item'>
               <div className='item--img--wrap'>
                 <div className='item--img'>
@@ -99,13 +98,16 @@ export default class extends Component {
               <div className='english--title'>INVITATION DINNER</div>
               <div style={{marginTop: '8px', fontSize: '16px'}}>邀请晚宴</div>
               <div style={{fontSize: '12px', marginTop: '14px'}}>
-                塑造互联网社交重头戏，真人王者荣耀
+                数百名业内大咖汇聚一堂，领悟社交
               </div>
               <div style={{fontSize: '12px'}}>
-                你最想认识他在游戏里
+                魅力，推动互联网技术领域分享与合作。
               </div>
             </div>
           </div>
+        {/*  <div className='body--row'>
+
+          </div>*/}
         </div>
       </div>
     )
