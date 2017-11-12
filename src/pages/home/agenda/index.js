@@ -46,7 +46,6 @@ export default class extends Component {
   
   // 改变焦点
   changeFocus = async (index) => {
-    console.log(index);
     await this.setState({
       topicIndex: index,
     })
@@ -121,7 +120,6 @@ export default class extends Component {
     this.setState({
       bannerAry: this.state.topicGroup[this.state.whichDay]
     })
-    console.log(this.state.topicGroup);
   
   }
   
