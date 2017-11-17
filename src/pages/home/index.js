@@ -2,11 +2,13 @@ import React, {Component} from 'react'
 import Strengths from './strengths'
 import Topics from './topics'
 import Agenda from './agenda'
-import SpeechGuest from './speech-guest'
 import CooperationPartner from './partner'
 import Footer from './footer'
+
 import Expert from './expert'
 import Presidium from './presidium'
+import SpeechGuest from './speech-guest'
+
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -21,9 +23,11 @@ export default class extends Component {
         <Strengths/>
         <Topics/>
         <Agenda/>
+        
         <Presidium/>
         <Expert/>
         <SpeechGuest/>
+        
         <CooperationPartner/>
         <Footer/>
         <BackTop/>

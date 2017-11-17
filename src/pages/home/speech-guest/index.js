@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import GuestItem from '../components/GuestItem'
 import './index.scss'
 import $ from 'jquery'
-import {getPeopleList} from "../../../services/home";
+import {getSpeecherList} from "../../../services/home";
 
 const getPosByInd = ind => {
   switch (ind % 5 ) {
@@ -37,7 +37,7 @@ export default class extends Component {
     $(document).scrollTop(this.top)
   }
   componentWillMount () {
-    getPeopleList(47)
+    getSpeecherList()
     .then(res => res && res.json())
     .then(data => {
       this.setState({
