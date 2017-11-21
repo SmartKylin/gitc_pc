@@ -17,10 +17,10 @@ export default class extends Component {
             <span>{data.other}</span>
           </div>
             {
-                this.props.whichDay ==0 ?
+                this.props.whichDay ==0 && data.name != '全球化专场'?
               <div className={data.name =="基础架构专场" ? 'open--ceremonyA':'open--ceremony'}>
-                {/*<span style={{marginRight: '10px'}}>09:00-10:00</span>*/}
-                {/*<span>开幕式直播</span>*/}
+                <span style={{marginRight: '10px'}}>09:00-10:00</span>
+                <span>开幕式直播</span>
                 {
                     data.name =="基础架构专场" ? <div>10:00-10:10 &nbsp;&nbsp;开场致辞--思科</div>:''
                 }
