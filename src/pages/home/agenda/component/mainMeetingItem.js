@@ -61,8 +61,8 @@ export default class extends Component {
           <div className="item--right">
             <div className='meeting--time'>19:00-20:00</div>
             <div className="meeting--theme">特邀晚宴</div>
-            <div className="guest--name">塑造互联网社交重头戏，真人王者荣耀</div>
-            <div className='guest--info'>你最想认识的人他在游戏里</div>
+            <div className="guest--name">打造顶级商务社交平台</div>
+            <div className='guest--info'>塑造互联网社交重头戏</div>
           </div>
         </div>
         
