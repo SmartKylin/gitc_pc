@@ -5,22 +5,6 @@ import {getLiveUrl} from "../../services/home";
 
 
 export default class Nav extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      btnshow: false,
-      liveUrl: '',
-    }
-  }
-  
-  async componentWillMount() {
-    let data = await getLiveUrl().then(res => res.json());
-    let liveUrl = data.data[0].url;
-    console.log(data, 'live');
-    this.setState({
-      liveUrl
-    });
-  }
   
   handeClick() {
     let phone = localStorage.getItem('phone');
@@ -67,7 +51,7 @@ export default class Nav extends React.Component {
               >GITC北京站</div>
   
               <a
-              href={this.state.liveUrl}
+              href={'http://www.thegitc.com/static/pdf/bj2017.pdf'}
               style={pathname === '/layout/issue' ? {color: '#04bddc'} : null}
               >大会会刊</a>
               
