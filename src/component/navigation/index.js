@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.scss"
 import logo from "../../images/logo/logo.png"
-// import {Link} from 'react-router-dom'
+import {getLiveUrl} from "../../services/home";
 
 
 export default class Nav extends React.Component {
@@ -9,7 +9,17 @@ export default class Nav extends React.Component {
     super(props)
     this.state = {
       btnshow: false,
+      liveUrl: '',
     }
+  }
+  
+  async componentWillMount() {
+    let data = await getLiveUrl().then(res => res.json());
+    let liveUrl = data.data[0].url;
+    console.log(data, 'live');
+    this.setState({
+      liveUrl
+    });
   }
   
   handeClick() {
@@ -55,16 +65,17 @@ export default class Nav extends React.Component {
                 onClick={() => this.handleClickLink('/layout/home')}
                 style={(pathname === '/layout/home' || pathname === '/' )? {color: '#04bddc'} : null}
               >GITC北京站</div>
+  
+              <a
+              href={this.state.liveUrl}
+              style={pathname === '/layout/issue' ? {color: '#04bddc'} : null}
+              >大会会刊</a>
               
               <div
                 onClick={() => this.handleClickLink('/awards')}
                 style={pathname === '/awards' ? {color: '#fadb93'} : null}
               >奖项评选报名</div>
               
-              <div
-                    onClick={() => this.handleClickLink('/layout/issue')}
-                    style={pathname === '/layout/issue' ? {color: '#04bddc'} : null}
-              >议题提交</div>
 
               <div
                   onClick={() => this.handleClickLink('/hotel')}

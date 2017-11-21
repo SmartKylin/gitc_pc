@@ -3,3 +3,28 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+.bj-banner-btn {
+  color: #000;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 1000;
+  background: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  right: 90px;
+  padding-top: 10px;
+  box-shadow: 0 0 20px 2px #ccc;
+  cursor: pointer;
+}
+.bj-banner-btn>div {
+  line-height: 20px;
+}
+
+
+.bj-banner-btn.bottom{
+  bottom: 120px;
+}
