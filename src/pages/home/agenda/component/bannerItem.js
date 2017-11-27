@@ -25,7 +25,7 @@ export default class extends Component {
                     data.name =="基础架构专场" ? <div>10:00-10:10 &nbsp;&nbsp;开场致辞--思科</div>:''
                 }
 
-              </div>:""
+              </div> : ""
             }
         </div>
         <div className='guest--list'>
@@ -35,10 +35,10 @@ export default class extends Component {
               <div className="item--left">
                 <img src={item.pic || defaultAvatar} alt=""/>
                 {
-                  item.files_url
-                    ? <a className='item--document' href={item.files_url}>
-                      <i className="iconfont icon-chakanwendangjilu"/>
-                      文档
+                  item.files__url
+                    ? <a className='item--document' href={item.files__url}>
+                      PPT&nbsp;
+                      <i className="iconfont icon-xiazai"/>
                     </a>
                   : null
                 }

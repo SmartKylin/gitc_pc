@@ -28,10 +28,10 @@ export default class extends Component {
             <div className="item--left">
               <img src={item.pic || defaultAvatar} alt=""/>
               {
-                item.files_url
-                ? <a className='item--document' href={item.files_url}>
-                  <i className="iconfont icon-chakanwendangjilu"/>
-                  文档
+                item.files__url
+                ? <a className='item--document' href={item.files__url}>
+                  PPT&nbsp;
+                  <i className="iconfont icon-xiazai"/>
                 </a>
                 : null
               }
