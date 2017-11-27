@@ -34,10 +34,14 @@ export default class extends Component {
               <div className='guest--item' key={index}>
               <div className="item--left">
                 <img src={item.pic || defaultAvatar} alt=""/>
-               {/*  <a className='item--document' href={item.files_url}>
-                  <i className="iconfont icon-chakanwendangjilu"/>
-                  文档
-                </a> */}
+                {
+                  item.files_url
+                    ? <a className='item--document' href={item.files_url}>
+                      <i className="iconfont icon-chakanwendangjilu"/>
+                      文档
+                    </a>
+                  : null
+                }
               </div>
               <div className="item--right">
                 <div className='meeting--time'>{item.stime}</div>
