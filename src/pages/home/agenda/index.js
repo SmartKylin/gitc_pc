@@ -142,7 +142,7 @@ export default class extends Component {
   
   render () {
     return (
-      <div className={'conference--agenda'}>
+      <div className={'conference--agenda'} id="meeting-agenda">
         <div className={'agenda--title'}>大会议程</div>
         
         {/*日期控制*/}

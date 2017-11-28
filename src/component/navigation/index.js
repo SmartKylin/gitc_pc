@@ -55,10 +55,10 @@ export default class Nav extends React.Component {
               style={pathname === '/layout/issue' ? {color: '#04bddc'} : null}
               >大会会刊</a>
               
-              <div
-                onClick={() => this.handleClickLink('/awards')}
+              <a
+                href={"#meeting-agenda"}
                 style={pathname === '/awards' ? {color: '#fadb93'} : null}
-              >奖项评选报名</div>
+              >资料下载</a>
               
 
               <div
