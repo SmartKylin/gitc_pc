@@ -1,15 +1,27 @@
 import React, {Component} from 'react'
 import defaultAvatar from '../../../../images/default-avatar.jpg'
 import './index.scss'
+import qrImg from '../image/down-qr-code.png'
 
 export default class extends Component {
   constructor (props) {
     super(props)
+    this.state = {
+      qrPop: false
+    }
+  }
+  qrPopChange = () => {
+    if(!this.state.qrPopChange){
+      window.setTimeout(() => this.setState({qrPop: false}), 5000)
+    }
+    this.setState({qrPop: !this.state.qrPop})
   }
   render () {
     let {data} = this.props
     return (
-    <div className='banner--item'>
+    <div
+      // className='banner--item'
+    >
       <div className="fixed--info">
         <div className='meeting--name'>{data.name}</div>
         <div className='meeting--addr'>
@@ -28,10 +40,10 @@ export default class extends Component {
             <div className="item--left">
               <img src={item.pic || defaultAvatar} alt=""/>
               {
-                item.files__url
-                ? <a className='item--document' href={item.files__url}>
+                item.file
+                ? <a className='item--document' href={item.file}>
                   PPT&nbsp;
-                  <i className="iconfont icon-xiazai"/>
+                  <i className="iconfont icon-down"/>
                 </a>
                 : null
               }
@@ -70,6 +82,22 @@ export default class extends Component {
           </div>
         </div>
         
+      </div>
+      <div className="banner-bottom">
+        <a
+          className="header-down-btn"
+          onClick={this.props.openQrPop}
+        >
+          <i className="iconfont icon-down"/>
+          &nbsp;批量下载主会场PPT
+        </a>
+       {/* {
+          this.state.qrPop
+          ? <div className="pop-qr-code">
+            <img src={qrImg} alt=""/>
+          </div>
+          : null
+        }*/}
       </div>
     </div>
     )

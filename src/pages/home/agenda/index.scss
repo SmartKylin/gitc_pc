@@ -76,15 +76,19 @@
     .banner--item {
       width: 385px;
       //height: 960px;
-      height: 1020px;
+      height: 1080px;
       margin: 0 9px;
       background: #1b2d4c;
       //overflow-y: scroll;
       //overflow: hidden;
       border-radius: 8px;
+      display: flex;
+      align-items: center;
+
+
       &.active {
         //height: 1000px;
-        height: 1050px;
+        height: 1100px;
       }
     }
 
@@ -103,6 +107,22 @@
         position: absolute;
         z-index: 10;
         //transition: left 0.3s
+      }
+
+      .banner-pop {
+        position: absolute;
+        left: 50%;
+        margin-left: -250px;
+        top: 50%;
+        z-index: 888;
+
+        .iconfont {
+          cursor: pointer;
+          position: absolute;
+          z-index: 889;
+          right: 10px;
+          top: 8px;
+        }
       }
     }
 

@@ -7,6 +7,7 @@ import {
 } from "../../../services/home";
 import BannerItem from './component/bannerItem'
 import MainMeeting from './component/mainMeetingItem'
+import qrImg from './image/pc_qr_code.png'
 
 const dateAry = ['11月23日', '11月24日']
 
@@ -26,6 +27,7 @@ export default class extends Component {
         0: [],
         1: []
       },
+      qrPop: false
       /*topicGroup: {
         0: ['企业专场', '主会场', '运维专场', '大数据专场', '基础架构专场', '前端技术专场', '移动互联网专场', 'IOT峰会', '技术管理&产品', '领袖峰会', '企业专场', '主会场'],
         1: ['企业专场', '主会场', '运维专场', '大数据专场', '基础架构专场', '质量和测试专场', '网络安全专场', '互联网金融峰会', '智慧物流论坛', '企业专场', '主会场']
@@ -41,6 +43,20 @@ export default class extends Component {
     })
     await this.setState({
       bannerAry: this.state.topicGroup[this.state.whichDay]
+    })
+  }
+  
+  // 关闭二维码弹窗
+  closeQrPop = () => {
+    this.setState({
+      qrPop: false
+    })
+  }
+  
+  openQrPop = () => {
+    window.onscroll = null;
+    this.setState({
+      qrPop: true
     })
   }
   
@@ -121,6 +137,7 @@ export default class extends Component {
       bannerAry: this.state.topicGroup[this.state.whichDay]
     })
   
+    let _this = this
   }
   
   render () {
@@ -167,14 +184,23 @@ export default class extends Component {
                     >
                   {
                     ((this.state.whichDay === 0) && (item.name === '主会场')) ?
-                    <MainMeeting data={item}/>
+                    <MainMeeting data={item} openQrPop={this.openQrPop}/>
                     :
-                    <BannerItem whichDay={this.state.whichDay} data={item}/>
+                    <BannerItem whichDay={this.state.whichDay} data={item} openQrPop={this.openQrPop}/>
                   }
                   </li>
                 ))
               }
             </ul>
+            
+            {
+              this.state.qrPop
+              ? <div className="banner-pop">
+                <img src={qrImg} alt=""/>
+                <i className="iconfont icon-cuohao-copy" onClick={this.closeQrPop}/>
+              </div>
+              : null
+            }
           </div>
           
           <ul className='focus--list'>
