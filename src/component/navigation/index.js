@@ -57,7 +57,7 @@ export default class Nav extends React.Component {
               
               <a
                 href={"#meeting-agenda"}
-                style={pathname === '/awards' ? {color: '#fadb93'} : null}
+                // style={pathname === '/awards' ? {color: '#fadb93'} : null}
               >资料下载</a>
               
 
