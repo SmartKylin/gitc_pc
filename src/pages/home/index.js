@@ -45,14 +45,14 @@ export default class extends Component {
         <CooperationPartner/>
         <Footer/>
         <BackTop/>
-        {
+        {/*{
           this.state.liveUrl
             ? <a className="bj-banner-btn bottom" href={this.state.liveUrl}>
               <div>大会</div>
               <div>直播</div>
             </a>
           : null
-        }
+        }*/}
       </div>
     )
   }

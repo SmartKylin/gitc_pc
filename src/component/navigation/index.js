@@ -56,7 +56,7 @@ export default class Nav extends React.Component {
               >大会会刊</a>
               
               <a
-                href={"#meeting-agenda"}
+                href={"http://bj.thegitc.com#meeting-agenda"}
                 // style={pathname === '/awards' ? {color: '#fadb93'} : null}
               >资料下载</a>
               
