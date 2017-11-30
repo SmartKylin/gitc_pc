@@ -3,7 +3,6 @@ import "./index.scss"
 import logo from "../../images/logo/logo.png"
 import {getLiveUrl} from "../../services/home";
 
-
 export default class Nav extends React.Component {
   
   handeClick() {
