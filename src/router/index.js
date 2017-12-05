@@ -17,13 +17,11 @@ export default class RouterMap extends Component {
       <Router history={history}>
           <Switch>
               <Route exact path='/' component={Layout}/>
-
               <Route path='/layout' component={Layout}/>
               <Route  path="/awards" component={Awards}/>
               <Route  path="/hotel" component={Hotel}/>
               <Route  path="/news" component={News}/>
           </Switch>
-
       </Router>
     </div>
     )
