@@ -17,17 +17,21 @@
       }
       .NavList{
         display: flex;
-        width: 656px;
+        //width: 656px;
         align-items: center;
         justify-content: space-around;
         .NavListBox{
-          width: 462px;
+          //width: 462px;
           .NavListBoxInner{
             display: flex;
             justify-content: space-between;
-            width: 490px;
+            //width: 490px;
             > div {
               cursor: pointer;
+              margin-right: 8px;
+            }
+            > a {
+              margin-right: 8px;
             }
           }
         }
