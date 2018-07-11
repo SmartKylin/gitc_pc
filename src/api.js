@@ -5,7 +5,7 @@
  */
 
 // const prefix = window.__CONFIG__.apiPath
-const prefix = 'http://120.92.10.182:8000'
+const prefix = 'http://api.thegitc.com'
 export default (config => {
   return Object.keys(config).reduce((copy, name) => {
     copy[name] = `${prefix}${config[name]}`
@@ -25,12 +25,12 @@ export default (config => {
   'user': '/api/gitc/user/',
   
   // 调取某页全部人员
-  // http://120.92.10.182:8000/api/gitc/person-4/all/list.json?token=1afb756d16740266efde290917ca1a8e
+  // http://api.thegitc.com/api/gitc/person-4/all/list.json?token=1afb756d16740266efde290917ca1a8e
   'getAllPeople':'/api/gitc/',
   
   'people':'/api/gitc/person-',
 
-// 接口地址：http://120.92.10.182:8000/api/gitc/person-{library_id}/list.json
+// 接口地址：http://api.thegitc.com/api/gitc/person-{library_id}/list.json
 
   // 获取门票列表
   'getTicketList': '/api/gitc/tricket/list/',
@@ -47,5 +47,5 @@ export default (config => {
 })
 
 // 人员列表
-// http://120.92.10.182:8000/api/gitc/person-{page_id}
+// http://api.thegitc.com/api/gitc/person-{page_id}
 // /list.json?token=1afb756d16740266efde290917ca1a8e

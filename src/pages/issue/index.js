@@ -145,7 +145,7 @@ class NormalLoginForm extends Component {
                                     getValueFromEvent: this.normFile,
                                     rules: [{ required: true, message: '请上传照片' }],
                                 })(
-                                    <Upload name="logo" action="http://120.92.10.182:8000/api/gitc/meetissue/upload.json?token=1afb756d16740266efde290917ca1a8e&doamin" listType="picture">
+                                    <Upload name="logo" action="http://api.thegitc.com/api/gitc/meetissue/upload.json?token=1afb756d16740266efde290917ca1a8e&doamin" listType="picture">
                                         <Button>
                                             <Icon type="upload" /> 上传照片
                                         </Button>
